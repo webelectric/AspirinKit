@@ -83,6 +83,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/webelectric/AspirinKit.git", :tag => "#{s.version}" }
 
+s.pod_target_xcconfig =  {
+        'SWIFT_VERSION' => '3.0',
+  }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
