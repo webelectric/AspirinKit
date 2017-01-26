@@ -19,11 +19,19 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "3.0"
   s.tvos.deployment_target = "10.0"
 
-  s.source       = { :git => "https://github.com/webelectric/AspirinKit.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/webelectric/AspirinKit.git", :tag => s.version.to_s }
+
+  s.frameworks   = ['Foundation', 'CoreGraphics', 'QuartzCore']
+  s.osx.frameworks   = ['AppKit', 'CoreImage']
+  s.ios.frameworks   = ['UIKit', 'CoreImage']
+  s.tvos.frameworks   = ['UIKit', 'CoreImage']
+  s.watchos.frameworks   = ['UIKit']
+
+  s.source_files  = ["AspirinKit/Sources/CoreGraphics/**/*.{h,swift,m}"]
+  s.ios.source_files  = ["AspirinKit/Sources/UIKit/**/*.{h,swift,m}"]
+  s.tvos.source_files  = ["AspirinKit/Sources/UIKit/**/*.{h,swift,m}"]
+
   s.pod_target_xcconfig =  {
         'SWIFT_VERSION' => '3.0',
   }
-
-  s.source_files  = "Sources/**/*.{h,swift,m}"
-
 end
