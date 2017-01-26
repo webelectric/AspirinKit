@@ -30,6 +30,20 @@
 		F16DCC181E3A7F7D0090591F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16DCC171E3A7F7D0090591F /* Assets.xcassets */; };
 		F16DCC1B1E3A7F7D0090591F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16DCC191E3A7F7D0090591F /* LaunchScreen.storyboard */; };
 		F16DCC261E3A7F7D0090591F /* AspirinKit_iOS_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16DCC251E3A7F7D0090591F /* AspirinKit_iOS_ExampleTests.swift */; };
+		F17788031E3A872C007B7A68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17788021E3A872C007B7A68 /* UIKit.framework */; };
+		F17788071E3A8738007B7A68 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17788041E3A8738007B7A68 /* AVFoundation.framework */; };
+		F17788081E3A8738007B7A68 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17788051E3A8738007B7A68 /* CoreFoundation.framework */; };
+		F17788091E3A8738007B7A68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17788061E3A8738007B7A68 /* Foundation.framework */; };
+		F177880B1E3A873E007B7A68 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F177880A1E3A873E007B7A68 /* AVKit.framework */; };
+		F17788131E3A8757007B7A68 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17788111E3A8757007B7A68 /* AVFoundation.framework */; };
+		F17788141E3A8757007B7A68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17788121E3A8757007B7A68 /* Foundation.framework */; };
+		F17788161E3A8768007B7A68 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17788151E3A8768007B7A68 /* AVKit.framework */; };
+		F17788181E3A8771007B7A68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17788171E3A8771007B7A68 /* Foundation.framework */; };
+		F177881A1E3A8778007B7A68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17788191E3A8778007B7A68 /* UIKit.framework */; };
+		F177881E1E3A8786007B7A68 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F177881B1E3A8786007B7A68 /* AVFoundation.framework */; };
+		F177881F1E3A8786007B7A68 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F177881C1E3A8786007B7A68 /* CoreFoundation.framework */; };
+		F17788201E3A8786007B7A68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F177881D1E3A8786007B7A68 /* Foundation.framework */; };
+		F17788221E3A878A007B7A68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17788211E3A878A007B7A68 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +91,20 @@
 		F16DCC211E3A7F7D0090591F /* AspirinKit iOS ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AspirinKit iOS ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16DCC251E3A7F7D0090591F /* AspirinKit_iOS_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspirinKit_iOS_ExampleTests.swift; sourceTree = "<group>"; };
 		F16DCC271E3A7F7D0090591F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17788021E3A872C007B7A68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F17788041E3A8738007B7A68 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F17788051E3A8738007B7A68 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F17788061E3A8738007B7A68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F177880A1E3A873E007B7A68 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
+		F17788111E3A8757007B7A68 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F17788121E3A8757007B7A68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F17788151E3A8768007B7A68 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		F17788171E3A8771007B7A68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F17788191E3A8778007B7A68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F177881B1E3A8786007B7A68 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F177881C1E3A8786007B7A68 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F177881D1E3A8786007B7A68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F17788211E3A878A007B7A68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +112,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F177880B1E3A873E007B7A68 /* AVKit.framework in Frameworks */,
+				F17788071E3A8738007B7A68 /* AVFoundation.framework in Frameworks */,
+				F17788081E3A8738007B7A68 /* CoreFoundation.framework in Frameworks */,
+				F17788091E3A8738007B7A68 /* Foundation.framework in Frameworks */,
+				F17788031E3A872C007B7A68 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +124,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F17788221E3A878A007B7A68 /* UIKit.framework in Frameworks */,
+				F177881E1E3A8786007B7A68 /* AVFoundation.framework in Frameworks */,
+				F177881F1E3A8786007B7A68 /* CoreFoundation.framework in Frameworks */,
+				F17788201E3A8786007B7A68 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +135,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F177881A1E3A8778007B7A68 /* UIKit.framework in Frameworks */,
+				F17788181E3A8771007B7A68 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +144,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F17788161E3A8768007B7A68 /* AVKit.framework in Frameworks */,
+				F17788141E3A8757007B7A68 /* Foundation.framework in Frameworks */,
+				F17788131E3A8757007B7A68 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +183,7 @@
 				F16DCC0D1E3A7F7D0090591F /* AspirinKit iOS Example */,
 				F16DCC241E3A7F7D0090591F /* AspirinKit iOS ExampleTests */,
 				F16DCBA91E3A779E0090591F /* Products */,
+				F17788011E3A872C007B7A68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,6 +272,27 @@
 				F16DCC271E3A7F7D0090591F /* Info.plist */,
 			);
 			path = "AspirinKit iOS ExampleTests";
+			sourceTree = "<group>";
+		};
+		F17788011E3A872C007B7A68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F17788211E3A878A007B7A68 /* UIKit.framework */,
+				F177881B1E3A8786007B7A68 /* AVFoundation.framework */,
+				F177881C1E3A8786007B7A68 /* CoreFoundation.framework */,
+				F177881D1E3A8786007B7A68 /* Foundation.framework */,
+				F17788191E3A8778007B7A68 /* UIKit.framework */,
+				F17788171E3A8771007B7A68 /* Foundation.framework */,
+				F17788151E3A8768007B7A68 /* AVKit.framework */,
+				F17788111E3A8757007B7A68 /* AVFoundation.framework */,
+				F17788121E3A8757007B7A68 /* Foundation.framework */,
+				F177880A1E3A873E007B7A68 /* AVKit.framework */,
+				F17788041E3A8738007B7A68 /* AVFoundation.framework */,
+				F17788051E3A8738007B7A68 /* CoreFoundation.framework */,
+				F17788061E3A8738007B7A68 /* Foundation.framework */,
+				F17788021E3A872C007B7A68 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1507,6 +1571,7 @@
 				F16DCC061E3A7ED70090591F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F16DCC281E3A7F7D0090591F /* Build configuration list for PBXNativeTarget "AspirinKit iOS Example" */ = {
 			isa = XCConfigurationList;
@@ -1515,6 +1580,7 @@
 				F16DCC2A1E3A7F7D0090591F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F16DCC2B1E3A7F7D0090591F /* Build configuration list for PBXNativeTarget "AspirinKit iOS ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -1523,6 +1589,7 @@
 				F16DCC2D1E3A7F7D0090591F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
