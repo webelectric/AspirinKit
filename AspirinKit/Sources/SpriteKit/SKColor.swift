@@ -131,8 +131,10 @@ public extension SKColor {
     ///while a value of < 0.125 is probably not readable in a black background
     public var brightness: CGFloat {
         let rgba = self.rgba
-
-        return ((rgba.r * 255 * 299) + (rgba.g * 255 * 587) + (rgba.b * 255 * 114)) / 255000;
+        let rVal = CGFloat(rgba.r * 255 * 299)
+        let gVal = CGFloat(rgba.g * 255 * 587)
+        let bVal = CGFloat(rgba.b * 255 * 114)
+        return (rVal + gVal + bVal) / CGFloat(255000);
     }
     
     public var isBright:Bool {
