@@ -1,5 +1,5 @@
 //
-//  CGTypes+Extensions.swift
+//  Array.swift
 //  AspirinKit
 //
 //  Copyright © 2012 - 2017 The Web Electric Corp.
@@ -24,23 +24,11 @@
 //
 
 import Foundation
-import CoreGraphics
 
-public extension CGRect {
-    
-    public func shrink(by dim:Float) -> CGRect {
-        return self.shrink(by: CGFloat(dim))
-    }
-    
-    public func shrink(by dim:Int) -> CGRect {
-        return self.shrink(by: CGFloat(dim))
-    }
-    
-    public func shrink(by dim:Double) -> CGRect {
-        return self.shrink(by: CGFloat(dim))
-    }
-    
-    public func shrink(by dim:CGFloat) -> CGRect {
-        return CGRect(x: self.origin.x - dim, y: self.origin.y - dim, width: self.size.width - dim, height: self.size.height - dim)
+public extension Array {
+    func randomElement() -> Element {
+        let randomIndex = Int(arc4random_uniform(UInt32(self.count)))
+        return self[randomIndex]
     }
 }
+

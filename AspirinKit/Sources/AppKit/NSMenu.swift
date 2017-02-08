@@ -1,5 +1,5 @@
 //
-//  AspirinKit.h
+//  NSMenu.swift
 //  AspirinKit
 //
 //  Copyright © 2012 - 2017 The Web Electric Corp.
@@ -23,13 +23,51 @@
 //  THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+import Foundation
+import AppKit
 
-//! Project version number for AspirinKit
-FOUNDATION_EXPORT double AspirinKitVersionNumber;
+public extension NSVisualEffectView {
+    
+    public var isVibrant:Bool {
+        set {
+            self.state = newValue ? .followsWindowActiveState : .inactive
+        }
+        get {
+            return self.state != .inactive
+        }
+    }
+}
 
-//! Project version string for AspirinKit
-FOUNDATION_EXPORT const unsigned char AspirinKitVersionString[];
+public extension NSMenu {
+    public func itemWithRepresentedObject<T: Equatable>(_ obj:T) -> NSMenuItem? {
+        for item in self.items {
+            
+            if let repObj = item.representedObject as? T {
+                if repObj == obj {
+                    return item
+                }
+            }
+        }
+        return nil
+    }
+}
 
-
-
+public extension NSMenuItem {
+    public var isOn:Bool {
+        set {
+            self.state = newValue ? NSOnState : NSOffState
+        }
+        get {
+            return self.state == NSOnState
+        }
+    }
+    
+    public var isOff:Bool {
+        set {
+            self.isOn = !newValue
+        }
+        get {
+            return !self.isOn
+        }
+    }
+}
