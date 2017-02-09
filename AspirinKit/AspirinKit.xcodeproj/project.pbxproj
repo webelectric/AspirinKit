@@ -60,6 +60,14 @@
 		F1E845071E4A617F000EABBF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845031E4A617F000EABBF /* Array.swift */; };
 		F1E8450A1E4A6253000EABBF /* NSMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845091E4A6253000EABBF /* NSMenu.swift */; };
 		F1E8450C1E4A628E000EABBF /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E8450B1E4A628E000EABBF /* Keyboard.swift */; };
+		F1F4238E1E4CFD9600E631F4 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4238D1E4CFD9600E631F4 /* Angle.swift */; };
+		F1F4238F1E4CFD9600E631F4 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4238D1E4CFD9600E631F4 /* Angle.swift */; };
+		F1F423901E4CFD9600E631F4 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4238D1E4CFD9600E631F4 /* Angle.swift */; };
+		F1F423911E4CFD9600E631F4 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4238D1E4CFD9600E631F4 /* Angle.swift */; };
+		F1F423931E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F423921E4CFDBD00E631F4 /* BaseTypeExtensions.swift */; };
+		F1F423941E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F423921E4CFDBD00E631F4 /* BaseTypeExtensions.swift */; };
+		F1F423951E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F423921E4CFDBD00E631F4 /* BaseTypeExtensions.swift */; };
+		F1F423961E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F423921E4CFDBD00E631F4 /* BaseTypeExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +118,8 @@
 		F1E845031E4A617F000EABBF /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		F1E845091E4A6253000EABBF /* NSMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMenu.swift; sourceTree = "<group>"; };
 		F1E8450B1E4A628E000EABBF /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		F1F4238D1E4CFD9600E631F4 /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
+		F1F423921E4CFDBD00E631F4 /* BaseTypeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTypeExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,9 +201,10 @@
 		F16DCBD81E3A78500090591F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F1F4238C1E4CFD8400E631F4 /* Math */,
+				F17B3D0E1E3E74C60067936B /* Foundation */,
 				F1E845081E4A6248000EABBF /* AppKit */,
 				F1E844F31E4A5098000EABBF /* SpriteKit */,
-				F17B3D0E1E3E74C60067936B /* Foundation */,
 				F17B3D091E3E70FA0067936B /* AVFoundation */,
 				F16DCBEE1E3A7B390090591F /* CoreGraphics */,
 				F16DCBE31E3A7AA50090591F /* UIKit */,
@@ -277,6 +288,7 @@
 				F1E844F91E4A577B000EABBF /* String.swift */,
 				F1E844FE1E4A6166000EABBF /* Thread.swift */,
 				F1E845031E4A617F000EABBF /* Array.swift */,
+				F1F423921E4CFDBD00E631F4 /* BaseTypeExtensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -296,6 +308,14 @@
 				F1E8450B1E4A628E000EABBF /* Keyboard.swift */,
 			);
 			path = AppKit;
+			sourceTree = "<group>";
+		};
+		F1F4238C1E4CFD8400E631F4 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4238D1E4CFD9600E631F4 /* Angle.swift */,
+			);
+			path = Math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,9 +552,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F16DCBEA1E3A7AFE0090591F /* UIView.swift in Sources */,
+				F1F4238E1E4CFD9600E631F4 /* Angle.swift in Sources */,
 				F1E845041E4A617F000EABBF /* Array.swift in Sources */,
 				F16DCBF51E3A7BD40090591F /* NSLayoutConstraint.swift in Sources */,
 				F16DCBF01E3A7B450090591F /* CGTypes.swift in Sources */,
+				F1F423931E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */,
 				F17B3D0B1E3E71180067936B /* Video.swift in Sources */,
 				F17B3D101E3E74E90067936B /* FileManager.swift in Sources */,
 				F1E844FA1E4A577B000EABBF /* String.swift in Sources */,
@@ -547,8 +569,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F423941E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */,
 				F1E844F61E4A50A8000EABBF /* SKColor.swift in Sources */,
 				F1E845001E4A6166000EABBF /* Thread.swift in Sources */,
+				F1F4238F1E4CFD9600E631F4 /* Angle.swift in Sources */,
 				F16DCBF11E3A7B450090591F /* CGTypes.swift in Sources */,
 				F1E845051E4A617F000EABBF /* Array.swift in Sources */,
 				F1E844FB1E4A577B000EABBF /* String.swift in Sources */,
@@ -561,9 +585,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F16DCBEC1E3A7AFE0090591F /* UIView.swift in Sources */,
+				F1F423901E4CFD9600E631F4 /* Angle.swift in Sources */,
 				F1E845061E4A617F000EABBF /* Array.swift in Sources */,
 				F16DCBF71E3A7BD40090591F /* NSLayoutConstraint.swift in Sources */,
 				F16DCBF21E3A7B450090591F /* CGTypes.swift in Sources */,
+				F1F423951E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */,
 				F17B3D0C1E3E71180067936B /* Video.swift in Sources */,
 				F17B3D121E3E74E90067936B /* FileManager.swift in Sources */,
 				F1E844FC1E4A577B000EABBF /* String.swift in Sources */,
@@ -577,9 +603,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F16DCBF31E3A7B450090591F /* CGTypes.swift in Sources */,
+				F1F423911E4CFD9600E631F4 /* Angle.swift in Sources */,
 				F1E845021E4A6166000EABBF /* Thread.swift in Sources */,
 				F1E845071E4A617F000EABBF /* Array.swift in Sources */,
 				F1E844F81E4A50A8000EABBF /* SKColor.swift in Sources */,
+				F1F423961E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */,
 				F1E8450C1E4A628E000EABBF /* Keyboard.swift in Sources */,
 				F1E844FD1E4A577B000EABBF /* String.swift in Sources */,
 				F1E8450A1E4A6253000EABBF /* NSMenu.swift in Sources */,
