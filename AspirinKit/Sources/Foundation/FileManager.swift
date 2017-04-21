@@ -29,69 +29,6 @@ enum FileError : Error {
     case URLNotFile(String)
 }
 
-//
-//enum FileAttribute {
-//    
-//    case type
-//    case extensionHidden
-//
-//    case modificationDate
-//    case creationDate
-//
-//    case ownerAccountID
-//    case ownerAccountName
-//    case groupOwnerAccountID
-//    case groupOwnerAccountName
-//    case posixPermissions
-//    
-//    case immutable
-//    case appendOnly
-//    case busy
-//
-//    case referenceCount
-//    
-//    case deviceIdentifier
-//    case systemNumber
-//    
-//    case systemFileNumber
-//    case hfsCreatorCode
-//    case hfsTypeCode
-//    
-//    case protectionKey
-//    case systemSize
-//    case systemFreeSize
-//    case systemNodes
-//    case systemFreeNodes
-//}
-//
-//enum FileType {
-//    
-//    case directory
-//    case regular
-//    case symbolicLink
-//    case socket
-//    case characterSpecial
-//    case blockSpecial
-//    case unknown
-//}
-//
-//class FSItem {
-//    
-//}
-//
-////actually use this class to decide file or not (then directory or not) and make the added methods to filemanager simpler
-//class File : FSItem {
-//    let path:URL
-//    
-//    init(_ url:URL) {
-//        path = url
-//    }
-//    
-////    init(named name:String, in directory:String = "./") {
-////        path = URL(
-////    }
-//}
-
 extension FileManager {
     
     static let documentsFolder:URL = {

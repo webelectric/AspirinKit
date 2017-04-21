@@ -1,5 +1,5 @@
 //
-//  Bundle.swift
+//  Application.swift
 //  AspirinKit
 //
 //  Copyright © 2012 - 2017 The Web Electric Corp.
@@ -23,8 +23,27 @@
 //  THE SOFTWARE.
 //
 
+
 import Foundation
 
-extension Bundle {
+public class Application {
+    
+    public static var appBuild: String {
+        get {
+            return (Bundle.main.infoDictionary?["CFBundleVersion"] as? String) ?? "BUILD_NUMBER_NOT_FOUND"
+        }
+    }
+    
+    public static var appVersion: String {
+        get {
+            return (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String) ?? "VERSION_NUMBER_NOT_FOUND"
+        }
+    }
+    
+    public static var appVersionAndBuild: String {
+        get {
+            return "v\(appVersion) (build \(appBuild))"
+        }
+    }
 
 }

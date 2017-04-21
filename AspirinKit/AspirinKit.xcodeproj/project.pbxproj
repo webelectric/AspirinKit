@@ -19,6 +19,10 @@
 		F10D247E1EAA694500648118 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D247C1EAA694500648118 /* Bundle.swift */; };
 		F10D247F1EAA694500648118 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D247C1EAA694500648118 /* Bundle.swift */; };
 		F10D24801EAA694500648118 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D247C1EAA694500648118 /* Bundle.swift */; };
+		F11E77471EAA7D63002FBCA8 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11E77461EAA7D63002FBCA8 /* Application.swift */; };
+		F11E77481EAA7D63002FBCA8 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11E77461EAA7D63002FBCA8 /* Application.swift */; };
+		F11E77491EAA7D63002FBCA8 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11E77461EAA7D63002FBCA8 /* Application.swift */; };
+		F11E774A1EAA7D63002FBCA8 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11E77461EAA7D63002FBCA8 /* Application.swift */; };
 		F15782461E99A8F300A5ACED /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15782451E99A8F300A5ACED /* SceneKit.framework */; };
 		F159244A1E9D8E7E00CF55F9 /* NSApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15924491E9D8E7E00CF55F9 /* NSApplicationDelegate.swift */; };
 		F159244E1E9D9B8E00CF55F9 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F159244B1E9D8F7F00CF55F9 /* UIViewController.swift */; };
@@ -146,6 +150,7 @@
 		F10D246E1EAA677100648118 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		F10D24781EAA678800648118 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		F10D247C1EAA694500648118 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		F11E77461EAA7D63002FBCA8 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		F15782451E99A8F300A5ACED /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/System/Library/Frameworks/SceneKit.framework; sourceTree = DEVELOPER_DIR; };
 		F15924491E9D8E7E00CF55F9 /* NSApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSApplicationDelegate.swift; sourceTree = "<group>"; };
 		F159244B1E9D8F7F00CF55F9 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -415,6 +420,7 @@
 				F15924871E9DA9BF00CF55F9 /* Dictionary.swift */,
 				F10D24661EAA661B00648118 /* Device.swift */,
 				F10D247C1EAA694500648118 /* Bundle.swift */,
+				F11E77461EAA7D63002FBCA8 /* Application.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -751,6 +757,7 @@
 				F1F423931E4CFDBD00E631F4 /* BaseTypes.swift in Sources */,
 				F16584411E53A22A00AE78F4 /* Counter.swift in Sources */,
 				F10D24671EAA661B00648118 /* Device.swift in Sources */,
+				F11E77471EAA7D63002FBCA8 /* Application.swift in Sources */,
 				F15924881E9DA9BF00CF55F9 /* Dictionary.swift in Sources */,
 				F17B3D101E3E74E90067936B /* FileManager.swift in Sources */,
 				F16583FD1E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */,
@@ -790,6 +797,7 @@
 				F16583F91E4FA6E800AE78F4 /* Benchmarks.swift in Sources */,
 				F1E844FB1E4A577B000EABBF /* String.swift in Sources */,
 				F165844C1E53AB0600AE78F4 /* SKNode.swift in Sources */,
+				F11E77481EAA7D63002FBCA8 /* Application.swift in Sources */,
 				F16584471E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */,
 				F16584381E539EC200AE78F4 /* SCNNode.swift in Sources */,
 				F165843D1E53A05400AE78F4 /* SCNMaterial.swift in Sources */,
@@ -810,6 +818,7 @@
 				F10D24741EAA677100648118 /* UIView.swift in Sources */,
 				F159244E1E9D9B8E00CF55F9 /* UIViewController.swift in Sources */,
 				F16584571E53AC8500AE78F4 /* SCNVector.swift in Sources */,
+				F11E77491EAA7D63002FBCA8 /* Application.swift in Sources */,
 				F16DCBF21E3A7B450090591F /* CGTypes.swift in Sources */,
 				F16584341E539E2900AE78F4 /* SCNTransaction.swift in Sources */,
 				F16584431E53A22A00AE78F4 /* Counter.swift in Sources */,
@@ -845,6 +854,7 @@
 				F1E845071E4A617F000EABBF /* Array.swift in Sources */,
 				F16584491E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */,
 				F16584581E53AC8500AE78F4 /* SCNVector.swift in Sources */,
+				F11E774A1EAA7D63002FBCA8 /* Application.swift in Sources */,
 				F1E844F81E4A50A8000EABBF /* SKColor.swift in Sources */,
 				F16584351E539E2900AE78F4 /* SCNTransaction.swift in Sources */,
 				F16584441E53A22A00AE78F4 /* Counter.swift in Sources */,

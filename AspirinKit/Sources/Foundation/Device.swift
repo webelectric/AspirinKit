@@ -89,7 +89,6 @@ public class Device {
             return UIDevice.current.name
         #endif
         
-        //        let x = TARGET_OS_SIMULATOR
     }
     
     public static var isSimulator:Bool {
@@ -103,45 +102,7 @@ public class Device {
             return UIScreen.main.scale
         #endif
         
-        //        let x = TARGET_OS_SIMULATOR
     }
     
-    ///a return value of 0 probably means an error ocurred
-    public static var appMemoryUsageMBytes:UInt {
-        return Device.appMemoryUsageBytes / (1024 * 1024)
-    }
-    
-    public static var appMemoryUsageBytes:UInt {
-        //TODO FIXME see below for code that must be upgraded to swift 3
-        return 0
-    }
-    
-    //TODO FIXME see below for code that must be upgraded to swift 3
-    ///a return value of 0 probably means an error ocurred
-    //    public static var appMemoryUsageBytes:UInt {
-    //
-    //        var info = task_basic_info()
-    //        var count = mach_msg_type_number_t(sizeofValue(info))/4
-    //
-    //        let kerr: kern_return_t = withUnsafeMutablePointer(&info) {
-    //
-    //            task_info(mach_task_self_,
-    //                      task_flavor_t(TASK_BASIC_INFO),
-    //                      task_info_t($0),
-    //                      &count)
-    //
-    //        }
-    //
-    //        var memSz:UInt = 0
-    //        if kerr == KERN_SUCCESS {
-    //            memSz = info.resident_size
-    ////                println("Memory in use (in bytes): \(info.resident_size)")
-    //        }
-    //        else {
-    //            print("NXDevice.appMemoryUsageBytes Error with task_info(): " +
-    //                (String(cString: mach_error_string(kerr)) ?? "unknown error\n"))
-    //        }
-    //        return memSz
-    //    
-    //    }
+  
 }

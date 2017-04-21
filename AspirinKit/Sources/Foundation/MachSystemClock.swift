@@ -25,7 +25,6 @@ import Foundation
  mach_absolute_time measures real seconds since the kernel was booted. It is monotonically increasing, and is unaffected by date and time settings.
  */
 public class MachSystemClock {
-    ///Recommended main var to use is MacSystemClock.absoluteTime - using instances, even the shared instance, should be reserved for tests and such
     public static let sharedInstance:MachSystemClock = MachSystemClock()
     private var _clock_timebase:mach_timebase_info
     
@@ -42,9 +41,7 @@ public class MachSystemClock {
         
     }
     
-    /**
-     Recommended main function to use. It is possible to instantiate
-     */
+    ///Recommended main var (MacSystemClock.absoluteTime) - using instances, even the shared instance, should be reserved for tests and such
     public static var absoluteTime: TimeInterval {
         return MachSystemClock.machAbsoluteTimeToTimeInterval(mach_absolute_time())
     }

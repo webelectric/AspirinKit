@@ -28,24 +28,7 @@ import AppKit
 
 extension NSApplicationDelegate {
     
-    public static var appBuild: String {
-        get {
-            return (Bundle.main.infoDictionary?["CFBundleVersion"] as? String) ?? "BUILD_NUMBER_NOT_FOUND"
-        }
-    }
     
-    public static var appVersion: String {
-        get {
-            return (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String) ?? "VERSION_NUMBER_NOT_FOUND"
-        }
-    }
-    
-    public static var appVersionAndBuild: String {
-        get {
-            return "v\(appVersion) (build \(appBuild))"
-        }
-    }
-
     public func showAlert(window: NSWindow,
                    title:String, message:String,
                    buttons:[(title:String, type:CommonAlertButtonType)] = [("Ok", .ok)],
