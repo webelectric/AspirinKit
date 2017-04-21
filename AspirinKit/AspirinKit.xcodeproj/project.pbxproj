@@ -691,7 +691,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "bash update-version.sh --reflect-commits --plist=\"Sources/Supporting Files/Info-iOS.plist\"\n";
+			shellScript = "bash update-version.sh --plist=\"Sources/Supporting Files/Info-iOS.plist\"\n";
 		};
 		F11E773B1EAA76C5002FBCA8 /* Update Version */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -705,7 +705,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "bash update-version.sh --reflect-commits --plist=\"Sources/Supporting Files/Info-iOS.plist\"";
+			shellScript = "bash update-version.sh --plist=\"Sources/Supporting Files/Info-iOS.plist\"";
 		};
 		F11E773C1EAA773E002FBCA8 /* Update Version */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -719,7 +719,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "bash update-version.sh --reflect-commits --plist=\"Sources/Supporting Files/Info-iOS.plist\"";
+			shellScript = "bash update-version.sh --plist=\"Sources/Supporting Files/Info-iOS.plist\"";
 		};
 		F11E773D1EAA7768002FBCA8 /* Update Version */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -733,7 +733,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "bash update-version.sh --reflect-commits --plist=\"Sources/Supporting Files/Info-iOS.plist\"";
+			shellScript = "bash update-version.sh --plist=\"Sources/Supporting Files/Info-iOS.plist\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
