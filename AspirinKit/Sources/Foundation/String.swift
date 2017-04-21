@@ -160,7 +160,11 @@ public extension String {
             return self[index]
         }
     }
-    
+
+    public subscript(i: Int) -> String  {
+        return String(self[i] as Character)
+    }
+
     fileprivate var vowels: [String]  {
         return ["a", "e", "i", "o", "u"]
     }

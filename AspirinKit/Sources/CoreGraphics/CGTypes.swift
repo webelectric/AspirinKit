@@ -23,8 +23,19 @@
 //  THE SOFTWARE.
 //
 
+//
+//  Copyright © 2016 The Web Electric Corp. All rights reserved.
+//
+
 import Foundation
 import CoreGraphics
+import SpriteKit
+
+#if os(OSX)
+    import AppKit
+#else
+    import UIKit
+#endif
 
 public extension String {
     
@@ -37,6 +48,13 @@ public extension String {
     
 }
 
+#if !os(OSX)
+    public extension NSValue {
+        public var pointValue:CGPoint {
+            return self.cgPointValue
+        }
+    }
+#endif
 
 public extension CGRect {
     
@@ -56,3 +74,34 @@ public extension CGRect {
         return CGRect(x: self.origin.x - dim, y: self.origin.y - dim, width: self.size.width - dim, height: self.size.height - dim)
     }
 }
+
+
+public extension CGSize {
+    public init(width:Float, height: Float) {
+        self.init(width:width.cgf, height:height.cgf)
+    }
+}
+
+
+#if os(OSX)
+    public extension CGPoint {
+        public init(nsPoint:NSPoint) {
+            self.init(x:nsPoint.x, y:nsPoint.y)
+        }
+    }
+    
+    public extension CGSize {
+        public init(nsSize:NSSize) {
+            self.init(width:nsSize.width, height:nsSize.height)
+        }
+    }
+#endif
+
+public func absoluteDistance(between firstPoint:(CGFloat), and secondPoint:(CGFloat)) -> CGFloat {
+    return CGFloat(absoluteDistance(between: firstPoint.f, and: secondPoint.f))
+}
+
+public func absoluteDistance(between firstPoint:(Float), and secondPoint:(Float)) -> Float {
+    return (firstPoint > secondPoint) ? (firstPoint - secondPoint) : (secondPoint - firstPoint);
+}
+

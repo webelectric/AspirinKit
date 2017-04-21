@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F16DCBCF1E3A77F20090591F"
-               BuildableName = "AspirinKit.framework"
-               BlueprintName = "AspirinKit macOS"
+               BlueprintIdentifier = "F16DCC0B1E3A7F7D0090591F"
+               BuildableName = "AspirinKit iOS Example.app"
+               BlueprintName = "AspirinKit iOS Example"
                ReferencedContainer = "container:AspirinKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F16DCC201E3A7F7D0090591F"
+               BuildableName = "AspirinKit iOS ExampleTests.xctest"
+               BlueprintName = "AspirinKit iOS ExampleTests"
+               ReferencedContainer = "container:AspirinKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F16DCC0B1E3A7F7D0090591F"
+            BuildableName = "AspirinKit iOS Example.app"
+            BlueprintName = "AspirinKit iOS Example"
+            ReferencedContainer = "container:AspirinKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +61,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F16DCBCF1E3A77F20090591F"
-            BuildableName = "AspirinKit.framework"
-            BlueprintName = "AspirinKit macOS"
+            BlueprintIdentifier = "F16DCC0B1E3A7F7D0090591F"
+            BuildableName = "AspirinKit iOS Example.app"
+            BlueprintName = "AspirinKit iOS Example"
             ReferencedContainer = "container:AspirinKit.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +80,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F16DCBCF1E3A77F20090591F"
-            BuildableName = "AspirinKit.framework"
-            BlueprintName = "AspirinKit macOS"
+            BlueprintIdentifier = "F16DCC0B1E3A7F7D0090591F"
+            BuildableName = "AspirinKit iOS Example.app"
+            BlueprintName = "AspirinKit iOS Example"
             ReferencedContainer = "container:AspirinKit.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

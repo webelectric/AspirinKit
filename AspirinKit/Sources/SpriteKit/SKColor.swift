@@ -26,7 +26,6 @@
 import Foundation
 import SpriteKit
 import CoreGraphics
-import CoreImage
 
 public extension SKColor {
     

@@ -7,17 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10D24671EAA661B00648118 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D24661EAA661B00648118 /* Device.swift */; };
+		F10D24691EAA661B00648118 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D24661EAA661B00648118 /* Device.swift */; };
+		F10D246A1EAA661B00648118 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D24661EAA661B00648118 /* Device.swift */; };
+		F10D24721EAA677100648118 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D246D1EAA677100648118 /* UIView.swift */; };
+		F10D24741EAA677100648118 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D246D1EAA677100648118 /* UIView.swift */; };
+		F10D24751EAA677100648118 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D246E1EAA677100648118 /* UIViewController.swift */; };
+		F10D24791EAA678800648118 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D24781EAA678800648118 /* UIApplication.swift */; };
+		F10D247B1EAA678800648118 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D24781EAA678800648118 /* UIApplication.swift */; };
+		F10D247D1EAA694500648118 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D247C1EAA694500648118 /* Bundle.swift */; };
+		F10D247E1EAA694500648118 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D247C1EAA694500648118 /* Bundle.swift */; };
+		F10D247F1EAA694500648118 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D247C1EAA694500648118 /* Bundle.swift */; };
+		F10D24801EAA694500648118 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D247C1EAA694500648118 /* Bundle.swift */; };
+		F15782461E99A8F300A5ACED /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15782451E99A8F300A5ACED /* SceneKit.framework */; };
+		F159244A1E9D8E7E00CF55F9 /* NSApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15924491E9D8E7E00CF55F9 /* NSApplicationDelegate.swift */; };
+		F159244E1E9D9B8E00CF55F9 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F159244B1E9D8F7F00CF55F9 /* UIViewController.swift */; };
+		F15924881E9DA9BF00CF55F9 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15924871E9DA9BF00CF55F9 /* Dictionary.swift */; };
+		F15924891E9DA9BF00CF55F9 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15924871E9DA9BF00CF55F9 /* Dictionary.swift */; };
+		F159248A1E9DA9BF00CF55F9 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15924871E9DA9BF00CF55F9 /* Dictionary.swift */; };
+		F159248B1E9DA9BF00CF55F9 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15924871E9DA9BF00CF55F9 /* Dictionary.swift */; };
+		F16583F81E4FA6E800AE78F4 /* Benchmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16583F71E4FA6E800AE78F4 /* Benchmarks.swift */; };
+		F16583F91E4FA6E800AE78F4 /* Benchmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16583F71E4FA6E800AE78F4 /* Benchmarks.swift */; };
+		F16583FA1E4FA6E800AE78F4 /* Benchmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16583F71E4FA6E800AE78F4 /* Benchmarks.swift */; };
+		F16583FB1E4FA6E800AE78F4 /* Benchmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16583F71E4FA6E800AE78F4 /* Benchmarks.swift */; };
+		F16583FD1E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16583FC1E4FA71D00AE78F4 /* MachSystemClock.swift */; };
+		F16583FE1E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16583FC1E4FA71D00AE78F4 /* MachSystemClock.swift */; };
+		F16583FF1E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16583FC1E4FA71D00AE78F4 /* MachSystemClock.swift */; };
+		F16584001E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16583FC1E4FA71D00AE78F4 /* MachSystemClock.swift */; };
+		F16584321E539E2900AE78F4 /* SCNTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584311E539E2900AE78F4 /* SCNTransaction.swift */; };
+		F16584331E539E2900AE78F4 /* SCNTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584311E539E2900AE78F4 /* SCNTransaction.swift */; };
+		F16584341E539E2900AE78F4 /* SCNTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584311E539E2900AE78F4 /* SCNTransaction.swift */; };
+		F16584351E539E2900AE78F4 /* SCNTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584311E539E2900AE78F4 /* SCNTransaction.swift */; };
+		F16584371E539EC200AE78F4 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584361E539EC200AE78F4 /* SCNNode.swift */; };
+		F16584381E539EC200AE78F4 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584361E539EC200AE78F4 /* SCNNode.swift */; };
+		F16584391E539EC200AE78F4 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584361E539EC200AE78F4 /* SCNNode.swift */; };
+		F165843A1E539EC200AE78F4 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584361E539EC200AE78F4 /* SCNNode.swift */; };
+		F165843C1E53A05400AE78F4 /* SCNMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165843B1E53A05400AE78F4 /* SCNMaterial.swift */; };
+		F165843D1E53A05400AE78F4 /* SCNMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165843B1E53A05400AE78F4 /* SCNMaterial.swift */; };
+		F165843E1E53A05400AE78F4 /* SCNMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165843B1E53A05400AE78F4 /* SCNMaterial.swift */; };
+		F165843F1E53A05400AE78F4 /* SCNMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165843B1E53A05400AE78F4 /* SCNMaterial.swift */; };
+		F16584411E53A22A00AE78F4 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584401E53A22A00AE78F4 /* Counter.swift */; };
+		F16584421E53A22A00AE78F4 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584401E53A22A00AE78F4 /* Counter.swift */; };
+		F16584431E53A22A00AE78F4 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584401E53A22A00AE78F4 /* Counter.swift */; };
+		F16584441E53A22A00AE78F4 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584401E53A22A00AE78F4 /* Counter.swift */; };
+		F16584461E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584451E53A9FC00AE78F4 /* SCNPhysicsContact.swift */; };
+		F16584471E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584451E53A9FC00AE78F4 /* SCNPhysicsContact.swift */; };
+		F16584481E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584451E53A9FC00AE78F4 /* SCNPhysicsContact.swift */; };
+		F16584491E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584451E53A9FC00AE78F4 /* SCNPhysicsContact.swift */; };
+		F165844B1E53AB0600AE78F4 /* SKNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165844A1E53AB0600AE78F4 /* SKNode.swift */; };
+		F165844C1E53AB0600AE78F4 /* SKNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165844A1E53AB0600AE78F4 /* SKNode.swift */; };
+		F165844D1E53AB0600AE78F4 /* SKNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165844A1E53AB0600AE78F4 /* SKNode.swift */; };
+		F165844E1E53AB0600AE78F4 /* SKNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165844A1E53AB0600AE78F4 /* SKNode.swift */; };
+		F16584501E53ABCB00AE78F4 /* CATransform3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165844F1E53ABCB00AE78F4 /* CATransform3D.swift */; };
+		F16584521E53ABCB00AE78F4 /* CATransform3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165844F1E53ABCB00AE78F4 /* CATransform3D.swift */; };
+		F16584531E53ABCB00AE78F4 /* CATransform3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165844F1E53ABCB00AE78F4 /* CATransform3D.swift */; };
+		F16584551E53AC8500AE78F4 /* SCNVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584541E53AC8500AE78F4 /* SCNVector.swift */; };
+		F16584561E53AC8500AE78F4 /* SCNVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584541E53AC8500AE78F4 /* SCNVector.swift */; };
+		F16584571E53AC8500AE78F4 /* SCNVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584541E53AC8500AE78F4 /* SCNVector.swift */; };
+		F16584581E53AC8500AE78F4 /* SCNVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584541E53AC8500AE78F4 /* SCNVector.swift */; };
+		F165845B1E53ACEB00AE78F4 /* SceneKit_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584591E53ACEB00AE78F4 /* SceneKit_iOS.swift */; };
+		F165845C1E53ACEB00AE78F4 /* SceneKit_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584591E53ACEB00AE78F4 /* SceneKit_iOS.swift */; };
+		F165845D1E53ACEB00AE78F4 /* SceneKit_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16584591E53ACEB00AE78F4 /* SceneKit_iOS.swift */; };
+		F16584621E53ACEB00AE78F4 /* SceneKit_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165845A1E53ACEB00AE78F4 /* SceneKit_macOS.swift */; };
 		F16DCBDF1E3A7A240090591F /* AspirinKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F16DCBDE1E3A7A240090591F /* AspirinKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F16DCBE01E3A7A240090591F /* AspirinKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F16DCBDE1E3A7A240090591F /* AspirinKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F16DCBE11E3A7A240090591F /* AspirinKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F16DCBDE1E3A7A240090591F /* AspirinKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F16DCBE21E3A7A240090591F /* AspirinKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F16DCBDE1E3A7A240090591F /* AspirinKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F16DCBEA1E3A7AFE0090591F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16DCBE91E3A7AFE0090591F /* UIView.swift */; };
-		F16DCBEC1E3A7AFE0090591F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16DCBE91E3A7AFE0090591F /* UIView.swift */; };
 		F16DCBF01E3A7B450090591F /* CGTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16DCBEF1E3A7B450090591F /* CGTypes.swift */; };
 		F16DCBF11E3A7B450090591F /* CGTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16DCBEF1E3A7B450090591F /* CGTypes.swift */; };
 		F16DCBF21E3A7B450090591F /* CGTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16DCBEF1E3A7B450090591F /* CGTypes.swift */; };
 		F16DCBF31E3A7B450090591F /* CGTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16DCBEF1E3A7B450090591F /* CGTypes.swift */; };
-		F16DCBF51E3A7BD40090591F /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16DCBF41E3A7BD40090591F /* NSLayoutConstraint.swift */; };
 		F16DCBF71E3A7BD40090591F /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16DCBF41E3A7BD40090591F /* NSLayoutConstraint.swift */; };
 		F16DCC001E3A7ED70090591F /* AspirinKit_iOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16DCBFF1E3A7ED70090591F /* AspirinKit_iOS_Tests.swift */; };
 		F16DCC021E3A7ED70090591F /* AspirinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16DCBA81E3A779E0090591F /* AspirinKit.framework */; };
@@ -64,10 +123,10 @@
 		F1F4238F1E4CFD9600E631F4 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4238D1E4CFD9600E631F4 /* Angle.swift */; };
 		F1F423901E4CFD9600E631F4 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4238D1E4CFD9600E631F4 /* Angle.swift */; };
 		F1F423911E4CFD9600E631F4 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4238D1E4CFD9600E631F4 /* Angle.swift */; };
-		F1F423931E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F423921E4CFDBD00E631F4 /* BaseTypeExtensions.swift */; };
-		F1F423941E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F423921E4CFDBD00E631F4 /* BaseTypeExtensions.swift */; };
-		F1F423951E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F423921E4CFDBD00E631F4 /* BaseTypeExtensions.swift */; };
-		F1F423961E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F423921E4CFDBD00E631F4 /* BaseTypeExtensions.swift */; };
+		F1F423931E4CFDBD00E631F4 /* BaseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F423921E4CFDBD00E631F4 /* BaseTypes.swift */; };
+		F1F423941E4CFDBD00E631F4 /* BaseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F423921E4CFDBD00E631F4 /* BaseTypes.swift */; };
+		F1F423951E4CFDBD00E631F4 /* BaseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F423921E4CFDBD00E631F4 /* BaseTypes.swift */; };
+		F1F423961E4CFDBD00E631F4 /* BaseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F423921E4CFDBD00E631F4 /* BaseTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +140,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F10D24661EAA661B00648118 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		F10D246C1EAA677100648118 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
+		F10D246D1EAA677100648118 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F10D246E1EAA677100648118 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		F10D24781EAA678800648118 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		F10D247C1EAA694500648118 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		F15782451E99A8F300A5ACED /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/System/Library/Frameworks/SceneKit.framework; sourceTree = DEVELOPER_DIR; };
+		F15924491E9D8E7E00CF55F9 /* NSApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSApplicationDelegate.swift; sourceTree = "<group>"; };
+		F159244B1E9D8F7F00CF55F9 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		F15924871E9DA9BF00CF55F9 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		F16583F71E4FA6E800AE78F4 /* Benchmarks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benchmarks.swift; sourceTree = "<group>"; };
+		F16583FC1E4FA71D00AE78F4 /* MachSystemClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachSystemClock.swift; sourceTree = "<group>"; };
+		F16584311E539E2900AE78F4 /* SCNTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNTransaction.swift; sourceTree = "<group>"; };
+		F16584361E539EC200AE78F4 /* SCNNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNNode.swift; sourceTree = "<group>"; };
+		F165843B1E53A05400AE78F4 /* SCNMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNMaterial.swift; sourceTree = "<group>"; };
+		F16584401E53A22A00AE78F4 /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		F16584451E53A9FC00AE78F4 /* SCNPhysicsContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNPhysicsContact.swift; sourceTree = "<group>"; };
+		F165844A1E53AB0600AE78F4 /* SKNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKNode.swift; sourceTree = "<group>"; };
+		F165844F1E53ABCB00AE78F4 /* CATransform3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATransform3D.swift; sourceTree = "<group>"; };
+		F16584541E53AC8500AE78F4 /* SCNVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNVector.swift; sourceTree = "<group>"; };
+		F16584591E53ACEB00AE78F4 /* SceneKit_iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKit_iOS.swift; sourceTree = "<group>"; };
+		F165845A1E53ACEB00AE78F4 /* SceneKit_macOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKit_macOS.swift; sourceTree = "<group>"; };
 		F16DCBA81E3A779E0090591F /* AspirinKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AspirinKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16DCBB61E3A77D60090591F /* AspirinKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AspirinKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16DCBC31E3A77E40090591F /* AspirinKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AspirinKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +200,7 @@
 		F1E845091E4A6253000EABBF /* NSMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMenu.swift; sourceTree = "<group>"; };
 		F1E8450B1E4A628E000EABBF /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		F1F4238D1E4CFD9600E631F4 /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
-		F1F423921E4CFDBD00E631F4 /* BaseTypeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTypeExtensions.swift; sourceTree = "<group>"; };
+		F1F423921E4CFDBD00E631F4 /* BaseTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15782461E99A8F300A5ACED /* SceneKit.framework in Frameworks */,
 				F17788221E3A878A007B7A68 /* UIKit.framework in Frameworks */,
 				F177881E1E3A8786007B7A68 /* AVFoundation.framework in Frameworks */,
 				F177881F1E3A8786007B7A68 /* CoreFoundation.framework in Frameworks */,
@@ -176,6 +258,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F10D246B1EAA677100648118 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F10D246C1EAA677100648118 /* NSLayoutConstraint.swift */,
+				F10D246D1EAA677100648118 /* UIView.swift */,
+				F10D246E1EAA677100648118 /* UIViewController.swift */,
+				F10D24781EAA678800648118 /* UIApplication.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F16583F61E4FA6DE00AE78F4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F16583F71E4FA6E800AE78F4 /* Benchmarks.swift */,
+				F16584401E53A22A00AE78F4 /* Counter.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F16584161E538C6D00AE78F4 /* SceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				F16584591E53ACEB00AE78F4 /* SceneKit_iOS.swift */,
+				F165845A1E53ACEB00AE78F4 /* SceneKit_macOS.swift */,
+				F16584311E539E2900AE78F4 /* SCNTransaction.swift */,
+				F16584361E539EC200AE78F4 /* SCNNode.swift */,
+				F165843B1E53A05400AE78F4 /* SCNMaterial.swift */,
+				F16584451E53A9FC00AE78F4 /* SCNPhysicsContact.swift */,
+				F16584541E53AC8500AE78F4 /* SCNVector.swift */,
+			);
+			path = SceneKit;
+			sourceTree = "<group>";
+		};
 		F16DCB9C1E3A776D0090591F = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +317,9 @@
 		F16DCBD81E3A78500090591F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F10D246B1EAA677100648118 /* UIKit */,
+				F16584161E538C6D00AE78F4 /* SceneKit */,
+				F16583F61E4FA6DE00AE78F4 /* Util */,
 				F1F4238C1E4CFD8400E631F4 /* Math */,
 				F17B3D0E1E3E74C60067936B /* Foundation */,
 				F1E845081E4A6248000EABBF /* AppKit */,
@@ -231,6 +350,7 @@
 			children = (
 				F16DCBE91E3A7AFE0090591F /* UIView.swift */,
 				F16DCBF41E3A7BD40090591F /* NSLayoutConstraint.swift */,
+				F159244B1E9D8F7F00CF55F9 /* UIViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -239,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				F16DCBEF1E3A7B450090591F /* CGTypes.swift */,
+				F165844F1E53ABCB00AE78F4 /* CATransform3D.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -255,6 +376,7 @@
 		F17788011E3A872C007B7A68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F15782451E99A8F300A5ACED /* SceneKit.framework */,
 				F17788211E3A878A007B7A68 /* UIKit.framework */,
 				F177881B1E3A8786007B7A68 /* AVFoundation.framework */,
 				F177881C1E3A8786007B7A68 /* CoreFoundation.framework */,
@@ -288,7 +410,11 @@
 				F1E844F91E4A577B000EABBF /* String.swift */,
 				F1E844FE1E4A6166000EABBF /* Thread.swift */,
 				F1E845031E4A617F000EABBF /* Array.swift */,
-				F1F423921E4CFDBD00E631F4 /* BaseTypeExtensions.swift */,
+				F1F423921E4CFDBD00E631F4 /* BaseTypes.swift */,
+				F16583FC1E4FA71D00AE78F4 /* MachSystemClock.swift */,
+				F15924871E9DA9BF00CF55F9 /* Dictionary.swift */,
+				F10D24661EAA661B00648118 /* Device.swift */,
+				F10D247C1EAA694500648118 /* Bundle.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -297,6 +423,7 @@
 			isa = PBXGroup;
 			children = (
 				F1E844F41E4A50A8000EABBF /* SKColor.swift */,
+				F165844A1E53AB0600AE78F4 /* SKNode.swift */,
 			);
 			path = SpriteKit;
 			sourceTree = "<group>";
@@ -306,6 +433,7 @@
 			children = (
 				F1E845091E4A6253000EABBF /* NSMenu.swift */,
 				F1E8450B1E4A628E000EABBF /* Keyboard.swift */,
+				F15924491E9D8E7E00CF55F9 /* NSApplicationDelegate.swift */,
 			);
 			path = AppKit;
 			sourceTree = "<group>";
@@ -360,6 +488,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F16DCBAE1E3A779E0090591F /* Build configuration list for PBXNativeTarget "AspirinKit iOS" */;
 			buildPhases = (
+				F11E773A1EAA7651002FBCA8 /* Update Version */,
 				F16DCBA31E3A779E0090591F /* Sources */,
 				F16DCBA41E3A779E0090591F /* Frameworks */,
 				F16DCBA51E3A779E0090591F /* Headers */,
@@ -378,6 +507,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F16DCBBB1E3A77D60090591F /* Build configuration list for PBXNativeTarget "AspirinKit watchOS" */;
 			buildPhases = (
+				F11E773C1EAA773E002FBCA8 /* Update Version */,
 				F16DCBB11E3A77D60090591F /* Sources */,
 				F16DCBB21E3A77D60090591F /* Frameworks */,
 				F16DCBB31E3A77D60090591F /* Headers */,
@@ -396,6 +526,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F16DCBC81E3A77E50090591F /* Build configuration list for PBXNativeTarget "AspirinKit tvOS" */;
 			buildPhases = (
+				F11E773D1EAA7768002FBCA8 /* Update Version */,
 				F16DCBBE1E3A77E40090591F /* Sources */,
 				F16DCBBF1E3A77E40090591F /* Frameworks */,
 				F16DCBC01E3A77E40090591F /* Headers */,
@@ -414,6 +545,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F16DCBD51E3A77F30090591F /* Build configuration list for PBXNativeTarget "AspirinKit macOS" */;
 			buildPhases = (
+				F11E773B1EAA76C5002FBCA8 /* Update Version */,
 				F16DCBCB1E3A77F20090591F /* Sources */,
 				F16DCBCC1E3A77F20090591F /* Frameworks */,
 				F16DCBCD1E3A77F20090591F /* Headers */,
@@ -453,7 +585,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				TargetAttributes = {
 					F16DCBA71E3A779E0090591F = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -546,22 +678,96 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F11E773A1EAA7651002FBCA8 /* Update Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "bash update-version.sh --reflect-commits --plist=\"Sources/Supporting Files/Info-iOS.plist\"\n";
+		};
+		F11E773B1EAA76C5002FBCA8 /* Update Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "bash update-version.sh --reflect-commits --plist=\"Sources/Supporting Files/Info-iOS.plist\"";
+		};
+		F11E773C1EAA773E002FBCA8 /* Update Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "bash update-version.sh --reflect-commits --plist=\"Sources/Supporting Files/Info-iOS.plist\"";
+		};
+		F11E773D1EAA7768002FBCA8 /* Update Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "bash update-version.sh --reflect-commits --plist=\"Sources/Supporting Files/Info-iOS.plist\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F16DCBA31E3A779E0090591F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F16DCBEA1E3A7AFE0090591F /* UIView.swift in Sources */,
 				F1F4238E1E4CFD9600E631F4 /* Angle.swift in Sources */,
 				F1E845041E4A617F000EABBF /* Array.swift in Sources */,
-				F16DCBF51E3A7BD40090591F /* NSLayoutConstraint.swift in Sources */,
+				F16583F81E4FA6E800AE78F4 /* Benchmarks.swift in Sources */,
+				F10D247D1EAA694500648118 /* Bundle.swift in Sources */,
+				F16584501E53ABCB00AE78F4 /* CATransform3D.swift in Sources */,
 				F16DCBF01E3A7B450090591F /* CGTypes.swift in Sources */,
-				F1F423931E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */,
-				F17B3D0B1E3E71180067936B /* Video.swift in Sources */,
+				F1F423931E4CFDBD00E631F4 /* BaseTypes.swift in Sources */,
+				F16584411E53A22A00AE78F4 /* Counter.swift in Sources */,
+				F10D24671EAA661B00648118 /* Device.swift in Sources */,
+				F15924881E9DA9BF00CF55F9 /* Dictionary.swift in Sources */,
 				F17B3D101E3E74E90067936B /* FileManager.swift in Sources */,
+				F16583FD1E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */,
+				F165845B1E53ACEB00AE78F4 /* SceneKit_iOS.swift in Sources */,
+				F165843C1E53A05400AE78F4 /* SCNMaterial.swift in Sources */,
+				F16584371E539EC200AE78F4 /* SCNNode.swift in Sources */,
+				F16584461E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */,
+				F16584551E53AC8500AE78F4 /* SCNVector.swift in Sources */,
+				F16584321E539E2900AE78F4 /* SCNTransaction.swift in Sources */,
+				F165844B1E53AB0600AE78F4 /* SKNode.swift in Sources */,
+				F1E844F51E4A50A8000EABBF /* SKColor.swift in Sources */,
 				F1E844FA1E4A577B000EABBF /* String.swift in Sources */,
 				F1E844FF1E4A6166000EABBF /* Thread.swift in Sources */,
-				F1E844F51E4A50A8000EABBF /* SKColor.swift in Sources */,
+				F10D24721EAA677100648118 /* UIView.swift in Sources */,
+				F10D24751EAA677100648118 /* UIViewController.swift in Sources */,
+				F10D24791EAA678800648118 /* UIApplication.swift in Sources */,
+				F17B3D0B1E3E71180067936B /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,14 +775,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F423941E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */,
+				F1F423941E4CFDBD00E631F4 /* BaseTypes.swift in Sources */,
 				F1E844F61E4A50A8000EABBF /* SKColor.swift in Sources */,
+				F15924891E9DA9BF00CF55F9 /* Dictionary.swift in Sources */,
 				F1E845001E4A6166000EABBF /* Thread.swift in Sources */,
 				F1F4238F1E4CFD9600E631F4 /* Angle.swift in Sources */,
+				F16583FE1E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */,
+				F16584331E539E2900AE78F4 /* SCNTransaction.swift in Sources */,
+				F16584421E53A22A00AE78F4 /* Counter.swift in Sources */,
 				F16DCBF11E3A7B450090591F /* CGTypes.swift in Sources */,
+				F16584561E53AC8500AE78F4 /* SCNVector.swift in Sources */,
+				F10D247E1EAA694500648118 /* Bundle.swift in Sources */,
 				F1E845051E4A617F000EABBF /* Array.swift in Sources */,
+				F16583F91E4FA6E800AE78F4 /* Benchmarks.swift in Sources */,
 				F1E844FB1E4A577B000EABBF /* String.swift in Sources */,
+				F165844C1E53AB0600AE78F4 /* SKNode.swift in Sources */,
+				F16584471E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */,
+				F16584381E539EC200AE78F4 /* SCNNode.swift in Sources */,
+				F165843D1E53A05400AE78F4 /* SCNMaterial.swift in Sources */,
 				F17B3D111E3E74E90067936B /* FileManager.swift in Sources */,
+				F165845C1E53ACEB00AE78F4 /* SceneKit_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,17 +802,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F16DCBEC1E3A7AFE0090591F /* UIView.swift in Sources */,
+				F16584391E539EC200AE78F4 /* SCNNode.swift in Sources */,
 				F1F423901E4CFD9600E631F4 /* Angle.swift in Sources */,
 				F1E845061E4A617F000EABBF /* Array.swift in Sources */,
 				F16DCBF71E3A7BD40090591F /* NSLayoutConstraint.swift in Sources */,
+				F16584481E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */,
+				F10D24741EAA677100648118 /* UIView.swift in Sources */,
+				F159244E1E9D9B8E00CF55F9 /* UIViewController.swift in Sources */,
+				F16584571E53AC8500AE78F4 /* SCNVector.swift in Sources */,
 				F16DCBF21E3A7B450090591F /* CGTypes.swift in Sources */,
-				F1F423951E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */,
+				F16584341E539E2900AE78F4 /* SCNTransaction.swift in Sources */,
+				F16584431E53A22A00AE78F4 /* Counter.swift in Sources */,
+				F10D247F1EAA694500648118 /* Bundle.swift in Sources */,
+				F1F423951E4CFDBD00E631F4 /* BaseTypes.swift in Sources */,
 				F17B3D0C1E3E71180067936B /* Video.swift in Sources */,
 				F17B3D121E3E74E90067936B /* FileManager.swift in Sources */,
 				F1E844FC1E4A577B000EABBF /* String.swift in Sources */,
+				F16583FA1E4FA6E800AE78F4 /* Benchmarks.swift in Sources */,
 				F1E845011E4A6166000EABBF /* Thread.swift in Sources */,
+				F159248A1E9DA9BF00CF55F9 /* Dictionary.swift in Sources */,
+				F165844D1E53AB0600AE78F4 /* SKNode.swift in Sources */,
+				F10D247B1EAA678800648118 /* UIApplication.swift in Sources */,
 				F1E844F71E4A50A8000EABBF /* SKColor.swift in Sources */,
+				F16584521E53ABCB00AE78F4 /* CATransform3D.swift in Sources */,
+				F165845D1E53ACEB00AE78F4 /* SceneKit_iOS.swift in Sources */,
+				F16583FF1E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */,
+				F165843E1E53A05400AE78F4 /* SCNMaterial.swift in Sources */,
+				F10D24691EAA661B00648118 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,16 +837,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				F16DCBF31E3A7B450090591F /* CGTypes.swift in Sources */,
+				F10D24801EAA694500648118 /* Bundle.swift in Sources */,
+				F16584621E53ACEB00AE78F4 /* SceneKit_macOS.swift in Sources */,
+				F165843A1E539EC200AE78F4 /* SCNNode.swift in Sources */,
 				F1F423911E4CFD9600E631F4 /* Angle.swift in Sources */,
 				F1E845021E4A6166000EABBF /* Thread.swift in Sources */,
 				F1E845071E4A617F000EABBF /* Array.swift in Sources */,
+				F16584491E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */,
+				F16584581E53AC8500AE78F4 /* SCNVector.swift in Sources */,
 				F1E844F81E4A50A8000EABBF /* SKColor.swift in Sources */,
-				F1F423961E4CFDBD00E631F4 /* BaseTypeExtensions.swift in Sources */,
+				F16584351E539E2900AE78F4 /* SCNTransaction.swift in Sources */,
+				F16584441E53A22A00AE78F4 /* Counter.swift in Sources */,
+				F1F423961E4CFDBD00E631F4 /* BaseTypes.swift in Sources */,
 				F1E8450C1E4A628E000EABBF /* Keyboard.swift in Sources */,
 				F1E844FD1E4A577B000EABBF /* String.swift in Sources */,
 				F1E8450A1E4A6253000EABBF /* NSMenu.swift in Sources */,
+				F16583FB1E4FA6E800AE78F4 /* Benchmarks.swift in Sources */,
 				F17B3D0D1E3E71180067936B /* Video.swift in Sources */,
+				F159248B1E9DA9BF00CF55F9 /* Dictionary.swift in Sources */,
+				F165844E1E53AB0600AE78F4 /* SKNode.swift in Sources */,
 				F17B3D131E3E74E90067936B /* FileManager.swift in Sources */,
+				F159244A1E9D8E7E00CF55F9 /* NSApplicationDelegate.swift in Sources */,
+				F16584531E53ABCB00AE78F4 /* CATransform3D.swift in Sources */,
+				F16584001E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */,
+				F165843F1E53A05400AE78F4 /* SCNMaterial.swift in Sources */,
+				F10D246A1EAA661B00648118 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +888,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -646,6 +914,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Release;
 		};
@@ -671,7 +956,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -737,7 +1022,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
