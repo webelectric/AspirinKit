@@ -28,21 +28,21 @@ import Foundation
 
 public class Application {
     
-    public static var appBuild: String {
+    public static var build: String {
         get {
             return (Bundle.main.infoDictionary?["CFBundleVersion"] as? String) ?? "BUILD_NUMBER_NOT_FOUND"
         }
     }
     
-    public static var appVersion: String {
+    public static var version: String {
         get {
             return (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String) ?? "VERSION_NUMBER_NOT_FOUND"
         }
     }
     
-    public static var appVersionAndBuild: String {
+    public static var versionAndBuild: String {
         get {
-            return "v\(appVersion) (build \(appBuild))"
+            return "v\(version) (build \(build))"
         }
     }
 
