@@ -1,18 +1,44 @@
 //
-//  BaseTypeExtensions.swift
+//  Device.swift
 //  AspirinKit
 //
-//  Created by Diego Doval on 2/9/17.
+//  Copyright © 2012 - 2017 The Web Electric Corp.
 //
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
 //
-
-import Foundation
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
 //
-//  Copyright (c) 2015 The Web Electric Corp. All rights reserved.
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
 //
 
 import Foundation
 import CoreGraphics
+
+
+extension Collection where Index == Int {
+    
+    /**
+     Picks a random element of the collection.
+     
+     - returns: A random element of the collection.
+     */
+    func randomElement() -> Iterator.Element? {
+        return isEmpty ? nil : self[Int(arc4random_uniform(UInt32(endIndex)))]
+    }
+    
+}
 
 /*!
  
@@ -48,7 +74,7 @@ public extension Int {
     public var squared:Int {
         return self * self
     }
-
+    
 }
 
 public extension CGFloat {
@@ -244,3 +270,4 @@ public func !=(lhs:CGFloat, rhs:(value:CGFloat, precision: PrecisionDecimals)) -
 public func !=(lhs:Double, rhs:(value:Double, precision: PrecisionDecimals)) -> Bool {
     return lhs.asIntFromDigits(rhs.precision) != rhs.value.asIntFromDigits(rhs.precision)
 }
+

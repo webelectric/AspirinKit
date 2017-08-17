@@ -36,7 +36,7 @@ import Foundation
 public class Device {
     
     public enum OSType {
-        case mac
+        case macOS
         case iOS
         case tvOS
         case unknown
@@ -44,7 +44,7 @@ public class Device {
         public init(autoset:Bool) {
             if autoset {
                 #if os(OSX)
-                    self = Device.OSType.mac
+                    self = Device.OSType.macOS
                 #else
                     #if os(tvOS)
                         self = Device.OSType.tvOS
@@ -104,5 +104,6 @@ public class Device {
         
     }
     
-  
+    
 }
+

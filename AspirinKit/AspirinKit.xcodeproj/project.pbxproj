@@ -105,18 +105,6 @@
 		F17B3D111E3E74E90067936B /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B3D0F1E3E74E90067936B /* FileManager.swift */; };
 		F17B3D121E3E74E90067936B /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B3D0F1E3E74E90067936B /* FileManager.swift */; };
 		F17B3D131E3E74E90067936B /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B3D0F1E3E74E90067936B /* FileManager.swift */; };
-		F1E844F51E4A50A8000EABBF /* SKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E844F41E4A50A8000EABBF /* SKColor.swift */; };
-		F1E844F61E4A50A8000EABBF /* SKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E844F41E4A50A8000EABBF /* SKColor.swift */; };
-		F1E844F71E4A50A8000EABBF /* SKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E844F41E4A50A8000EABBF /* SKColor.swift */; };
-		F1E844F81E4A50A8000EABBF /* SKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E844F41E4A50A8000EABBF /* SKColor.swift */; };
-		F1E844FA1E4A577B000EABBF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E844F91E4A577B000EABBF /* String.swift */; };
-		F1E844FB1E4A577B000EABBF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E844F91E4A577B000EABBF /* String.swift */; };
-		F1E844FC1E4A577B000EABBF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E844F91E4A577B000EABBF /* String.swift */; };
-		F1E844FD1E4A577B000EABBF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E844F91E4A577B000EABBF /* String.swift */; };
-		F1E844FF1E4A6166000EABBF /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E844FE1E4A6166000EABBF /* Thread.swift */; };
-		F1E845001E4A6166000EABBF /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E844FE1E4A6166000EABBF /* Thread.swift */; };
-		F1E845011E4A6166000EABBF /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E844FE1E4A6166000EABBF /* Thread.swift */; };
-		F1E845021E4A6166000EABBF /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E844FE1E4A6166000EABBF /* Thread.swift */; };
 		F1E845041E4A617F000EABBF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845031E4A617F000EABBF /* Array.swift */; };
 		F1E845051E4A617F000EABBF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845031E4A617F000EABBF /* Array.swift */; };
 		F1E845061E4A617F000EABBF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845031E4A617F000EABBF /* Array.swift */; };
@@ -198,9 +186,9 @@
 		F17788211E3A878A007B7A68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F17B3D0A1E3E71180067936B /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		F17B3D0F1E3E74E90067936B /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
-		F1E844F41E4A50A8000EABBF /* SKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKColor.swift; sourceTree = "<group>"; };
-		F1E844F91E4A577B000EABBF /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		F1E844FE1E4A6166000EABBF /* Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		F19D08BB1F45FF6B00F1F0C2 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Sources/Foundation/String+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		F19D08BC1F45FF6E00F1F0C2 /* Thread+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Thread+Extensions.swift"; path = "Sources/Foundation/Thread+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		F19D08BD1F45FF7300F1F0C2 /* SKColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKColor+Extensions.swift"; sourceTree = "<group>"; };
 		F1E845031E4A617F000EABBF /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		F1E845091E4A6253000EABBF /* NSMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMenu.swift; sourceTree = "<group>"; };
 		F1E8450B1E4A628E000EABBF /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
@@ -412,8 +400,8 @@
 			isa = PBXGroup;
 			children = (
 				F17B3D0F1E3E74E90067936B /* FileManager.swift */,
-				F1E844F91E4A577B000EABBF /* String.swift */,
-				F1E844FE1E4A6166000EABBF /* Thread.swift */,
+				F19D08BB1F45FF6B00F1F0C2 /* String+Extensions.swift */,
+				F19D08BC1F45FF6E00F1F0C2 /* Thread+Extensions.swift */,
 				F1E845031E4A617F000EABBF /* Array.swift */,
 				F1F423921E4CFDBD00E631F4 /* BaseTypes.swift */,
 				F16583FC1E4FA71D00AE78F4 /* MachSystemClock.swift */,
@@ -428,7 +416,7 @@
 		F1E844F31E4A5098000EABBF /* SpriteKit */ = {
 			isa = PBXGroup;
 			children = (
-				F1E844F41E4A50A8000EABBF /* SKColor.swift */,
+				F19D08BD1F45FF7300F1F0C2 /* SKColor+Extensions.swift */,
 				F165844A1E53AB0600AE78F4 /* SKNode.swift */,
 			);
 			path = SpriteKit;
@@ -591,12 +579,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				TargetAttributes = {
 					F16DCBA71E3A779E0090591F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 596FA9S4A7;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					F16DCBB51E3A77D60090591F = {
@@ -768,9 +756,6 @@
 				F16584551E53AC8500AE78F4 /* SCNVector.swift in Sources */,
 				F16584321E539E2900AE78F4 /* SCNTransaction.swift in Sources */,
 				F165844B1E53AB0600AE78F4 /* SKNode.swift in Sources */,
-				F1E844F51E4A50A8000EABBF /* SKColor.swift in Sources */,
-				F1E844FA1E4A577B000EABBF /* String.swift in Sources */,
-				F1E844FF1E4A6166000EABBF /* Thread.swift in Sources */,
 				F10D24721EAA677100648118 /* UIView.swift in Sources */,
 				F10D24751EAA677100648118 /* UIViewController.swift in Sources */,
 				F10D24791EAA678800648118 /* UIApplication.swift in Sources */,
@@ -783,9 +768,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F423941E4CFDBD00E631F4 /* BaseTypes.swift in Sources */,
-				F1E844F61E4A50A8000EABBF /* SKColor.swift in Sources */,
 				F15924891E9DA9BF00CF55F9 /* Dictionary.swift in Sources */,
-				F1E845001E4A6166000EABBF /* Thread.swift in Sources */,
 				F1F4238F1E4CFD9600E631F4 /* Angle.swift in Sources */,
 				F16583FE1E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */,
 				F16584331E539E2900AE78F4 /* SCNTransaction.swift in Sources */,
@@ -795,7 +778,6 @@
 				F10D247E1EAA694500648118 /* Bundle.swift in Sources */,
 				F1E845051E4A617F000EABBF /* Array.swift in Sources */,
 				F16583F91E4FA6E800AE78F4 /* Benchmarks.swift in Sources */,
-				F1E844FB1E4A577B000EABBF /* String.swift in Sources */,
 				F165844C1E53AB0600AE78F4 /* SKNode.swift in Sources */,
 				F11E77481EAA7D63002FBCA8 /* Application.swift in Sources */,
 				F16584471E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */,
@@ -826,13 +808,10 @@
 				F1F423951E4CFDBD00E631F4 /* BaseTypes.swift in Sources */,
 				F17B3D0C1E3E71180067936B /* Video.swift in Sources */,
 				F17B3D121E3E74E90067936B /* FileManager.swift in Sources */,
-				F1E844FC1E4A577B000EABBF /* String.swift in Sources */,
 				F16583FA1E4FA6E800AE78F4 /* Benchmarks.swift in Sources */,
-				F1E845011E4A6166000EABBF /* Thread.swift in Sources */,
 				F159248A1E9DA9BF00CF55F9 /* Dictionary.swift in Sources */,
 				F165844D1E53AB0600AE78F4 /* SKNode.swift in Sources */,
 				F10D247B1EAA678800648118 /* UIApplication.swift in Sources */,
-				F1E844F71E4A50A8000EABBF /* SKColor.swift in Sources */,
 				F16584521E53ABCB00AE78F4 /* CATransform3D.swift in Sources */,
 				F165845D1E53ACEB00AE78F4 /* SceneKit_iOS.swift in Sources */,
 				F16583FF1E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */,
@@ -850,17 +829,14 @@
 				F16584621E53ACEB00AE78F4 /* SceneKit_macOS.swift in Sources */,
 				F165843A1E539EC200AE78F4 /* SCNNode.swift in Sources */,
 				F1F423911E4CFD9600E631F4 /* Angle.swift in Sources */,
-				F1E845021E4A6166000EABBF /* Thread.swift in Sources */,
 				F1E845071E4A617F000EABBF /* Array.swift in Sources */,
 				F16584491E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */,
 				F16584581E53AC8500AE78F4 /* SCNVector.swift in Sources */,
 				F11E774A1EAA7D63002FBCA8 /* Application.swift in Sources */,
-				F1E844F81E4A50A8000EABBF /* SKColor.swift in Sources */,
 				F16584351E539E2900AE78F4 /* SCNTransaction.swift in Sources */,
 				F16584441E53A22A00AE78F4 /* Counter.swift in Sources */,
 				F1F423961E4CFDBD00E631F4 /* BaseTypes.swift in Sources */,
 				F1E8450C1E4A628E000EABBF /* Keyboard.swift in Sources */,
-				F1E844FD1E4A577B000EABBF /* String.swift in Sources */,
 				F1E8450A1E4A6253000EABBF /* NSMenu.swift in Sources */,
 				F16583FB1E4FA6E800AE78F4 /* Benchmarks.swift in Sources */,
 				F17B3D0D1E3E71180067936B /* Video.swift in Sources */,
@@ -898,12 +874,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -924,12 +906,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1003,7 +991,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1061,7 +1050,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

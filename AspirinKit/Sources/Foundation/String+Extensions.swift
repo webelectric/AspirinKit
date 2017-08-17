@@ -25,6 +25,8 @@
 
 import Foundation
 
+let spaceCharacterSet = CharacterSet.whitespaces
+
 public extension String {
     
     var length:Int { return self.characters.count }
@@ -34,7 +36,7 @@ public extension String {
     var float:Float? {
         return Float(self)
     }
-
+    
     var double:Double? {
         return Double(self)
     }
@@ -51,7 +53,7 @@ public extension String {
         }
         return result
     }
-
+    
     static func createUUID() -> String {
         return UUID().uuidString
     }
@@ -78,7 +80,7 @@ public extension String {
         
         return val.trim().isEmpty
     }
-
+    
     mutating public func removed(prefix: String) {
         
         let prefixStartIndex = self.index(self.startIndex, offsetBy: prefix.characters.count)
@@ -91,7 +93,7 @@ public extension String {
             return self
         }
         let prefixStartIndex = self.characters.index(self.startIndex, offsetBy: prefix.characters.count)
-        return self.substring(from: prefixStartIndex)
+        return String(self[prefixStartIndex...])
     }
     
     public func removing(suffix: String) -> String {
@@ -101,15 +103,14 @@ public extension String {
         }
         let toIdx = self.index(self.startIndex, offsetBy: position)
         
-        
-        return self.substring(to: toIdx)
+        return String(self[..<toIdx])
     }
     
     public func substring(from startIndex: Int, length: Int) -> String
     {
         let start = self.characters.index(self.startIndex, offsetBy: startIndex)
         let end = self.characters.index(self.startIndex, offsetBy: startIndex + length)
-        return self.substring(with: start ..< end)
+        return String(self[start ..< end])
     }
     
     public func position(of substring: String) -> Int
@@ -160,11 +161,11 @@ public extension String {
             return self[index]
         }
     }
-
+    
     public subscript(i: Int) -> String  {
         return String(self[i] as Character)
     }
-
+    
     fileprivate var vowels: [String]  {
         return ["a", "e", "i", "o", "u"]
     }
@@ -191,18 +192,18 @@ public extension String {
             
             if lastChar.lowercased() == "y" && vowels.filter({x in x == secondToLastChar}).count == 0 {
                 let toIdx = self.index(self.startIndex, offsetBy: (len - 1))
-                prefix = self.substring(to: toIdx)// self[0..<(self.length - 1)]
+                prefix = String(self[..<toIdx])// self[0..<(self.length - 1)]
                 suffix = "ies"
             }
             else if lastChar.lowercased() == "s" || (lastChar.lowercased() == "o" && consonants.filter({x in x == secondToLastChar}).count > 0) {
                 let toIdx = self.index(self.startIndex, offsetBy: (len))
-                prefix = self.substring(to: toIdx)// self[0..<(self.length - 1)]
+                prefix = String(self[..<toIdx])// self[0..<(self.length - 1)]
                 //                prefix = self[0..<self.length]
                 suffix = "es"
             }
             else {
                 let toIdx = self.index(self.startIndex, offsetBy: (len))
-                prefix = self.substring(to: toIdx)// self[0..<(self.length - 1)]
+                prefix = String(self[..<toIdx])// self[0..<(self.length - 1)]
                 //                prefix = self[0..<self.length]
                 suffix = "s"
             }
@@ -210,5 +211,127 @@ public extension String {
             return prefix + (lastChar != lastChar.uppercased() ? suffix : suffix.uppercased())
         }
     }
-
+    
 }
+
+public extension String {
+    
+    
+    ///removes prefix if present
+    mutating public func removePrefix(_ prefix: String) {
+        
+        let prefixStartIndex = self.index(self.startIndex, offsetBy: prefix.characters.count)
+        let range = self.startIndex..<prefixStartIndex
+        self.removeSubrange(range)
+    }
+    
+    public func stringByRemovingPrefix(_ prefix: String) -> String {
+        if !self.hasPrefix(prefix) {
+            return self
+        }
+        let prefixStartIndex = self.characters.index(self.startIndex, offsetBy: prefix.characters.count)
+        return String(self[prefixStartIndex...])
+    }
+    
+    public func stringByRemovingSuffix(_ suffix: String) -> String {
+        let position = self.indexOf(suffix)
+        if position == -1 {
+            return self
+        }
+        let toIdx = self.index(self.startIndex, offsetBy: position)
+        
+        
+        return String(self[..<toIdx])
+    }
+    
+    public func subString(_ startIndex: Int, length: Int) -> String
+    {
+        let start = self.characters.index(self.startIndex, offsetBy: startIndex)
+        let end = self.characters.index(self.startIndex, offsetBy: startIndex + length)
+        return String(self[start ..< end])
+    }
+    
+    public func indexOf(_ substring: String) -> Int
+    {
+        if let range = self.range(of: substring) {
+            return self.characters.distance(from: self.startIndex, to: range.lowerBound)
+        }
+        else {
+            return -1
+        }
+    }
+    
+    public func indexOf(_ substring: String, startIndex: Int) -> Int {
+        let startRange = self.characters.index(self.startIndex, offsetBy: startIndex)
+        
+        let range = self.range(of: substring, options: NSString.CompareOptions.literal, range: Range<String.Index>(startRange ..< self.endIndex))
+        
+        if let rangeResult = range {
+            return self.characters.distance(from: self.startIndex, to: rangeResult.lowerBound)
+        } else {
+            return -1
+        }
+    }
+    
+    public func lastIndexOf(_ substring: String) -> Int
+    {
+        var index = -1
+        var stepIndex = self.indexOf(substring)
+        
+        while stepIndex > -1 {
+            index = stepIndex
+            
+            if (stepIndex + substring.length) < self.length {
+                stepIndex = self.indexOf(substring, startIndex: (stepIndex + substring.length))
+            }
+            else {
+                stepIndex = -1
+            }
+        }
+        
+        return index
+    }
+    
+    
+    //    public func contains(_ substring:String) -> Bool {
+    //        return self.indexOf(substring) != -1
+    //    }
+    
+    
+    
+    public func pluralize(_ count: Int) -> String
+    {
+        if count == 1 {
+            return self
+        }
+        else {
+            let lastChar = self.subString(self.length - 1, length: 1)
+            let secondToLastChar = self.subString(self.length - 2, length: 1)
+            var prefix = "", suffix = ""
+            
+            if lastChar.lowercased() == "y" && vowels.filter({x in x == secondToLastChar}).count == 0 {
+                
+                print(prefix)
+                
+                let toIdx = self.index(self.startIndex, offsetBy: (self.length - 1))
+                prefix = String(self[..<toIdx])// self[0..<(self.length - 1)]
+                print(prefix)
+                suffix = "ies"
+            }
+            else if lastChar.lowercased() == "s" || (lastChar.lowercased() == "o" && consonants.filter({x in x == secondToLastChar}).count > 0) {
+                let toIdx = self.index(self.startIndex, offsetBy: (self.length))
+                prefix = String(self[..<toIdx])// self[0..<(self.length - 1)]
+                //                prefix = self[0..<self.length]
+                suffix = "es"
+            }
+            else {
+                let toIdx = self.index(self.startIndex, offsetBy: (self.length))
+                prefix = String(self[..<toIdx])// self[0..<(self.length - 1)]
+                //                prefix = self[0..<self.length]
+                suffix = "s"
+            }
+            
+            return prefix + (lastChar != lastChar.uppercased() ? suffix : suffix.uppercased())
+        }
+    }}
+

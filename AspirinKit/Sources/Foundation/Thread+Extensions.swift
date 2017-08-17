@@ -25,7 +25,7 @@
 
 import Foundation
 
-public typealias NoParamBlock = () -> Void
+public typealias NXNoParamBlock = () -> Void
 
 public class Weak<T: AnyObject> {
     public weak var value : T?
@@ -42,11 +42,18 @@ public func randomFloat(baseValue base:Float, maxVariance variance:Float) -> Flo
     return base + variance * (Float(arc4random()) / Float(UINT32_MAX))
 }
 
-public class ClosureHolder : AnyObject {
-    public var block:NoParamBlock
+public class ClosureHolder  {
+    public var block:NXNoParamBlock
     
-    public init(block: @escaping NoParamBlock) {
+    public init(block: @escaping NXNoParamBlock) {
         self.block = block
+    }
+}
+
+public extension Array {
+    func randomElement() -> Element {
+        let randomIndex = Int(arc4random_uniform(UInt32(self.count)))
+        return self[randomIndex]
     }
 }
 
@@ -56,7 +63,7 @@ public class ClosureHolder : AnyObject {
  // do stuff
  }
  */
-public func delay(_ delay:Double, closure:@escaping NoParamBlock) {
+public func delay(_ delay:Double, closure:@escaping NXNoParamBlock) {
     
     let dispatchTime = DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
     
@@ -64,7 +71,7 @@ public func delay(_ delay:Double, closure:@escaping NoParamBlock) {
     
 }
 
-///used objc_sync_enter and objc_sync_exit
+///J58 synchronized - used objc_sync_enter and objc_sync_exit
 public func synchronized<T>(_ lock: AnyObject, block: () -> T) -> T {
     var result: Any? = nil
     objc_sync_enter(lock)
@@ -77,7 +84,7 @@ public func synchronized<T>(_ lock: AnyObject, block: () -> T) -> T {
     return result as! T
 }
 
-///used objc_sync_enter and objc_sync_exit, update for swift 2.0 uses defer to handle proper unlock even with errors
+///J58 synchronized - used objc_sync_enter and objc_sync_exit, update for swift 2.0 uses defer to handle proper unlock even with errors
 public func synchronized(_ lock:AnyObject, block:() -> Void ) {
     
     objc_sync_enter(lock)
@@ -89,7 +96,6 @@ public func synchronized(_ lock:AnyObject, block:() -> Void ) {
     block()
 }
 
-///convenient additions to Thread class
 public extension Thread {
     
     public class func printCallStackSymbols() {
@@ -97,11 +103,11 @@ public extension Thread {
     }
     
     //necessary to run synchronously on the main queue, but checking if not already in the main queue, to avoid deadlocks
-    class func dispatchSyncOnMainQueue(_ block: NoParamBlock) {
+    class func dispatchSyncOnMainQueue(_ block: NXNoParamBlock) {
         /*
-         Do not use
-            if (dispatch_get_current_queue() == dispatch_get_main_queue()) {
-         per Apple:
+         Do not use this
+         if (dispatch_get_current_queue() == dispatch_get_main_queue()) {
+         since Apple says
          "The result of dispatch_get_main_queue() may or may not equal the result of dispatch_get_current_queue()
          when called on the main thread. Comparing the two is not a valid way to test whether code is executing
          on the main thread. Foundation/AppKit programs should use [NSThread isMainThread]. POSIX programs may
@@ -118,28 +124,28 @@ public extension Thread {
     }
     
     ///utility function that dispatches an optional block on current thread if not nil
-    class func dispatchAsyncInBackground(_ possibleBlock:NoParamBlock?) {
+    class func dispatchAsyncInBackground(_ possibleBlock:NXNoParamBlock?) {
         if let block = possibleBlock {
             DispatchQueue.global(qos: .background).async(execute: block)
         }
     }
     
-    class func dispatchAsyncOnMainQueue(_ possibleBlock:NoParamBlock?) {
+    class func dispatchAsyncOnMainQueue(_ possibleBlock:NXNoParamBlock?) {
         if let block = possibleBlock {
             DispatchQueue.main.async(execute: block)
         }
     }
     
-    class func dispatchAsyncOnBackgroundQueue(_ block:@escaping NoParamBlock) {
+    class func dispatchAsyncOnBackgroundQueue(_ block:@escaping NXNoParamBlock) {
         DispatchQueue.global(qos: .background).async(execute: block)
     }
     
-    class func dispatchAsyncOnHighPriorityQueue(_ block:@escaping NoParamBlock, afterDelay delay:TimeInterval) {
+    class func dispatchAsyncOnHighPriorityQueue(_ block:@escaping NXNoParamBlock, afterDelay delay:TimeInterval) {
         let dispatchTime = DispatchTime.now() + Double(Int64(UInt64(delay) * NSEC_PER_SEC)) / Double(NSEC_PER_SEC)
         DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: dispatchTime, execute: block)
     }
     
-    class func dispatchAsyncOnMainQueue(afterDelay delay:TimeInterval, block possibleBlock:NoParamBlock?) {
+    class func dispatchAsyncOnMainQueue(afterDelay delay:TimeInterval, block possibleBlock:NXNoParamBlock?) {
         if let block = possibleBlock {
             if delay == 0 {
                 DispatchQueue.main.async(execute: block)
@@ -152,3 +158,4 @@ public extension Thread {
     }
     
 }
+

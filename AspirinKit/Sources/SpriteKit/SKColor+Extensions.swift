@@ -27,8 +27,24 @@ import Foundation
 import SpriteKit
 import CoreGraphics
 
+//TODO add back hex string cache
+//private var hexStringColorCache: NSCache<String, SKColor> = NSCache<String, SKColor>()
+
+
 public extension SKColor {
     
+    
+    //    class func clearCaches() {
+    //        hexStringColorCache.removeAll()
+    //    }
+    
+    public static var nxLabelColor:SKColor {
+        return SKColor.darkGray
+    }
+    
+    public static var nxSecondaryLabelColor:SKColor {
+        return SKColor.darkGray
+    }
     
     public var rgba:(r:Float, g:Float, b:Float, a:Float) {
         
@@ -37,9 +53,16 @@ public extension SKColor {
         var blue:CGFloat = 0
         var alpha:CGFloat = 0
         self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-
+        
         return (r: Float(red), g: Float(green), b: Float(blue), a: Float(alpha))
     }
+    
+    #if !os(macOS)
+    //TODO FIXME -- verify what is the best equivalent function to match NSColor's calibrated...
+    public convenience init(calibratedRed redc:CGFloat, green greenc:CGFloat, blue bluec:CGFloat, alpha alphac:CGFloat) {
+        self.init(red: redc, green: greenc, blue: bluec, alpha: alphac)
+    }
+    #endif
     
     // A hex must be either 6 ("RRGGBB"), 7 ("#RRGGBB") or 8/9 characters ("#RRGGBBAA")
     public convenience init(hexString: String) {
@@ -63,19 +86,22 @@ public extension SKColor {
             return
         }
         
-
+        //        var resultColor: SKColor? = hexStringColorCache.object(forKey: rgbHexString)
+        
         var alpha:Float = 100
         
         var rgbOnlyHex = hex
         
         if hexLength == 8 {
-            alpha = hex.substring(from: hex.index(hex.endIndex, offsetBy: -2)).float ?? 1
-            rgbOnlyHex = hex.substring(to: hex.index(hex.startIndex, offsetBy: 5))
+            let strPos1 = hex.index(hex.endIndex, offsetBy: -2)
+            let strPos2 = hex.index(hex.startIndex, offsetBy: 5)
+            alpha = String(hex[strPos1...]).float ?? 1
+            rgbOnlyHex = String(hex[..<strPos2])
         }
         
         var rgb:UInt32 = 0
         let s:Scanner = Scanner(string: rgbOnlyHex)
-
+        
         s.scanHexInt32(&rgb)
         
         let redValue = CGFloat((rgb & 0xFF0000) >> 16) / 255.0
@@ -92,11 +118,11 @@ public extension SKColor {
     }
     
     public var hexString: String?  {
-      
+        
         let rgba = self.rgba
-            
+        
         let hexString = String(format: "%02X%02X%02X%02X",  Int(rgba.r * 255.0), Int(rgba.g * 255.0), Int(rgba.b * 255.0), Int(rgba.a * 255.0))
-      
+        
         return hexString
     }
     
@@ -153,3 +179,4 @@ public extension SKColor {
         return self
     }
 }
+
