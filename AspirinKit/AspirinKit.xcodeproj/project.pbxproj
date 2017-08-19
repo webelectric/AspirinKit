@@ -105,10 +105,18 @@
 		F17B3D111E3E74E90067936B /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B3D0F1E3E74E90067936B /* FileManager.swift */; };
 		F17B3D121E3E74E90067936B /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B3D0F1E3E74E90067936B /* FileManager.swift */; };
 		F17B3D131E3E74E90067936B /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B3D0F1E3E74E90067936B /* FileManager.swift */; };
-		F1E845041E4A617F000EABBF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845031E4A617F000EABBF /* Array.swift */; };
-		F1E845051E4A617F000EABBF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845031E4A617F000EABBF /* Array.swift */; };
-		F1E845061E4A617F000EABBF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845031E4A617F000EABBF /* Array.swift */; };
-		F1E845071E4A617F000EABBF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845031E4A617F000EABBF /* Array.swift */; };
+		F19D08D01F46012500F1F0C2 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D08BB1F45FF6B00F1F0C2 /* String+Extensions.swift */; };
+		F19D08D11F46012500F1F0C2 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D08BB1F45FF6B00F1F0C2 /* String+Extensions.swift */; };
+		F19D08D21F46012600F1F0C2 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D08BB1F45FF6B00F1F0C2 /* String+Extensions.swift */; };
+		F19D08D31F46012700F1F0C2 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D08BB1F45FF6B00F1F0C2 /* String+Extensions.swift */; };
+		F19D08D41F46012900F1F0C2 /* Thread+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D08BC1F45FF6E00F1F0C2 /* Thread+Extensions.swift */; };
+		F19D08D51F46012900F1F0C2 /* Thread+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D08BC1F45FF6E00F1F0C2 /* Thread+Extensions.swift */; };
+		F19D08D61F46012A00F1F0C2 /* Thread+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D08BC1F45FF6E00F1F0C2 /* Thread+Extensions.swift */; };
+		F19D08D71F46012A00F1F0C2 /* Thread+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D08BC1F45FF6E00F1F0C2 /* Thread+Extensions.swift */; };
+		F1E845041E4A617F000EABBF /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845031E4A617F000EABBF /* Array+Extensions.swift */; };
+		F1E845051E4A617F000EABBF /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845031E4A617F000EABBF /* Array+Extensions.swift */; };
+		F1E845061E4A617F000EABBF /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845031E4A617F000EABBF /* Array+Extensions.swift */; };
+		F1E845071E4A617F000EABBF /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845031E4A617F000EABBF /* Array+Extensions.swift */; };
 		F1E8450A1E4A6253000EABBF /* NSMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E845091E4A6253000EABBF /* NSMenu.swift */; };
 		F1E8450C1E4A628E000EABBF /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E8450B1E4A628E000EABBF /* Keyboard.swift */; };
 		F1F4238E1E4CFD9600E631F4 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4238D1E4CFD9600E631F4 /* Angle.swift */; };
@@ -189,7 +197,7 @@
 		F19D08BB1F45FF6B00F1F0C2 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Sources/Foundation/String+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		F19D08BC1F45FF6E00F1F0C2 /* Thread+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Thread+Extensions.swift"; path = "Sources/Foundation/Thread+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		F19D08BD1F45FF7300F1F0C2 /* SKColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKColor+Extensions.swift"; sourceTree = "<group>"; };
-		F1E845031E4A617F000EABBF /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		F1E845031E4A617F000EABBF /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		F1E845091E4A6253000EABBF /* NSMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMenu.swift; sourceTree = "<group>"; };
 		F1E8450B1E4A628E000EABBF /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		F1F4238D1E4CFD9600E631F4 /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
@@ -402,7 +410,7 @@
 				F17B3D0F1E3E74E90067936B /* FileManager.swift */,
 				F19D08BB1F45FF6B00F1F0C2 /* String+Extensions.swift */,
 				F19D08BC1F45FF6E00F1F0C2 /* Thread+Extensions.swift */,
-				F1E845031E4A617F000EABBF /* Array.swift */,
+				F1E845031E4A617F000EABBF /* Array+Extensions.swift */,
 				F1F423921E4CFDBD00E631F4 /* BaseTypes.swift */,
 				F16583FC1E4FA71D00AE78F4 /* MachSystemClock.swift */,
 				F15924871E9DA9BF00CF55F9 /* Dictionary.swift */,
@@ -737,7 +745,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F4238E1E4CFD9600E631F4 /* Angle.swift in Sources */,
-				F1E845041E4A617F000EABBF /* Array.swift in Sources */,
+				F1E845041E4A617F000EABBF /* Array+Extensions.swift in Sources */,
 				F16583F81E4FA6E800AE78F4 /* Benchmarks.swift in Sources */,
 				F10D247D1EAA694500648118 /* Bundle.swift in Sources */,
 				F16584501E53ABCB00AE78F4 /* CATransform3D.swift in Sources */,
@@ -751,7 +759,9 @@
 				F16583FD1E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */,
 				F165845B1E53ACEB00AE78F4 /* SceneKit_iOS.swift in Sources */,
 				F165843C1E53A05400AE78F4 /* SCNMaterial.swift in Sources */,
+				F19D08D01F46012500F1F0C2 /* String+Extensions.swift in Sources */,
 				F16584371E539EC200AE78F4 /* SCNNode.swift in Sources */,
+				F19D08D41F46012900F1F0C2 /* Thread+Extensions.swift in Sources */,
 				F16584461E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */,
 				F16584551E53AC8500AE78F4 /* SCNVector.swift in Sources */,
 				F16584321E539E2900AE78F4 /* SCNTransaction.swift in Sources */,
@@ -776,10 +786,12 @@
 				F16DCBF11E3A7B450090591F /* CGTypes.swift in Sources */,
 				F16584561E53AC8500AE78F4 /* SCNVector.swift in Sources */,
 				F10D247E1EAA694500648118 /* Bundle.swift in Sources */,
-				F1E845051E4A617F000EABBF /* Array.swift in Sources */,
+				F1E845051E4A617F000EABBF /* Array+Extensions.swift in Sources */,
 				F16583F91E4FA6E800AE78F4 /* Benchmarks.swift in Sources */,
 				F165844C1E53AB0600AE78F4 /* SKNode.swift in Sources */,
 				F11E77481EAA7D63002FBCA8 /* Application.swift in Sources */,
+				F19D08D51F46012900F1F0C2 /* Thread+Extensions.swift in Sources */,
+				F19D08D11F46012500F1F0C2 /* String+Extensions.swift in Sources */,
 				F16584471E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */,
 				F16584381E539EC200AE78F4 /* SCNNode.swift in Sources */,
 				F165843D1E53A05400AE78F4 /* SCNMaterial.swift in Sources */,
@@ -794,7 +806,7 @@
 			files = (
 				F16584391E539EC200AE78F4 /* SCNNode.swift in Sources */,
 				F1F423901E4CFD9600E631F4 /* Angle.swift in Sources */,
-				F1E845061E4A617F000EABBF /* Array.swift in Sources */,
+				F1E845061E4A617F000EABBF /* Array+Extensions.swift in Sources */,
 				F16DCBF71E3A7BD40090591F /* NSLayoutConstraint.swift in Sources */,
 				F16584481E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */,
 				F10D24741EAA677100648118 /* UIView.swift in Sources */,
@@ -806,6 +818,7 @@
 				F16584431E53A22A00AE78F4 /* Counter.swift in Sources */,
 				F10D247F1EAA694500648118 /* Bundle.swift in Sources */,
 				F1F423951E4CFDBD00E631F4 /* BaseTypes.swift in Sources */,
+				F19D08D21F46012600F1F0C2 /* String+Extensions.swift in Sources */,
 				F17B3D0C1E3E71180067936B /* Video.swift in Sources */,
 				F17B3D121E3E74E90067936B /* FileManager.swift in Sources */,
 				F16583FA1E4FA6E800AE78F4 /* Benchmarks.swift in Sources */,
@@ -813,6 +826,7 @@
 				F165844D1E53AB0600AE78F4 /* SKNode.swift in Sources */,
 				F10D247B1EAA678800648118 /* UIApplication.swift in Sources */,
 				F16584521E53ABCB00AE78F4 /* CATransform3D.swift in Sources */,
+				F19D08D61F46012A00F1F0C2 /* Thread+Extensions.swift in Sources */,
 				F165845D1E53ACEB00AE78F4 /* SceneKit_iOS.swift in Sources */,
 				F16583FF1E4FA71D00AE78F4 /* MachSystemClock.swift in Sources */,
 				F165843E1E53A05400AE78F4 /* SCNMaterial.swift in Sources */,
@@ -829,7 +843,7 @@
 				F16584621E53ACEB00AE78F4 /* SceneKit_macOS.swift in Sources */,
 				F165843A1E539EC200AE78F4 /* SCNNode.swift in Sources */,
 				F1F423911E4CFD9600E631F4 /* Angle.swift in Sources */,
-				F1E845071E4A617F000EABBF /* Array.swift in Sources */,
+				F1E845071E4A617F000EABBF /* Array+Extensions.swift in Sources */,
 				F16584491E53A9FC00AE78F4 /* SCNPhysicsContact.swift in Sources */,
 				F16584581E53AC8500AE78F4 /* SCNVector.swift in Sources */,
 				F11E774A1EAA7D63002FBCA8 /* Application.swift in Sources */,
@@ -839,7 +853,9 @@
 				F1E8450C1E4A628E000EABBF /* Keyboard.swift in Sources */,
 				F1E8450A1E4A6253000EABBF /* NSMenu.swift in Sources */,
 				F16583FB1E4FA6E800AE78F4 /* Benchmarks.swift in Sources */,
+				F19D08D31F46012700F1F0C2 /* String+Extensions.swift in Sources */,
 				F17B3D0D1E3E71180067936B /* Video.swift in Sources */,
+				F19D08D71F46012A00F1F0C2 /* Thread+Extensions.swift in Sources */,
 				F159248B1E9DA9BF00CF55F9 /* Dictionary.swift in Sources */,
 				F165844E1E53AB0600AE78F4 /* SKNode.swift in Sources */,
 				F17B3D131E3E74E90067936B /* FileManager.swift in Sources */,
@@ -991,7 +1007,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1050,7 +1066,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1117,6 +1133,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1175,6 +1192,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
@@ -1241,6 +1259,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
@@ -1298,6 +1317,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
@@ -1367,6 +1387,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1425,6 +1446,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1482,6 +1504,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1529,6 +1552,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};

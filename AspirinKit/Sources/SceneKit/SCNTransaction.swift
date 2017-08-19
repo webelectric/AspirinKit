@@ -14,6 +14,7 @@ public extension SCNTransaction {
 
     
     public class func runBlockInTransaction(duration aDuration:TimeInterval? = nil, delay aDelay:TimeInterval = 0, timingFunctionName:String? = nil, completion completionBlock: NoParamBlock? = nil, scnBlock: @escaping NoParamBlock) {
+        
         Thread.dispatchAsyncOnMainQueue(afterDelay: aDelay) {
             SCNTransaction.begin()
             

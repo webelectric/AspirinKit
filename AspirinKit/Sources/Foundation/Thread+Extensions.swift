@@ -25,7 +25,7 @@
 
 import Foundation
 
-public typealias NXNoParamBlock = () -> Void
+public typealias NoParamBlock = () -> Void
 
 public class Weak<T: AnyObject> {
     public weak var value : T?
@@ -43,19 +43,13 @@ public func randomFloat(baseValue base:Float, maxVariance variance:Float) -> Flo
 }
 
 public class ClosureHolder  {
-    public var block:NXNoParamBlock
+    public var block:NoParamBlock
     
-    public init(block: @escaping NXNoParamBlock) {
+    public init(block: @escaping NoParamBlock) {
         self.block = block
     }
 }
 
-public extension Array {
-    func randomElement() -> Element {
-        let randomIndex = Int(arc4random_uniform(UInt32(self.count)))
-        return self[randomIndex]
-    }
-}
 
 //see http://stackoverflow.com/questions/24034544/dispatch-after-gcd-in-swift
 /**
@@ -63,7 +57,7 @@ public extension Array {
  // do stuff
  }
  */
-public func delay(_ delay:Double, closure:@escaping NXNoParamBlock) {
+public func delay(_ delay:Double, closure:@escaping NoParamBlock) {
     
     let dispatchTime = DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
     
@@ -103,7 +97,7 @@ public extension Thread {
     }
     
     //necessary to run synchronously on the main queue, but checking if not already in the main queue, to avoid deadlocks
-    class func dispatchSyncOnMainQueue(_ block: NXNoParamBlock) {
+    class func dispatchSyncOnMainQueue(_ block: NoParamBlock) {
         /*
          Do not use this
          if (dispatch_get_current_queue() == dispatch_get_main_queue()) {
@@ -124,28 +118,28 @@ public extension Thread {
     }
     
     ///utility function that dispatches an optional block on current thread if not nil
-    class func dispatchAsyncInBackground(_ possibleBlock:NXNoParamBlock?) {
+    class func dispatchAsyncInBackground(_ possibleBlock:NoParamBlock?) {
         if let block = possibleBlock {
             DispatchQueue.global(qos: .background).async(execute: block)
         }
     }
     
-    class func dispatchAsyncOnMainQueue(_ possibleBlock:NXNoParamBlock?) {
+    class func dispatchAsyncOnMainQueue(_ possibleBlock:NoParamBlock?) {
         if let block = possibleBlock {
             DispatchQueue.main.async(execute: block)
         }
     }
     
-    class func dispatchAsyncOnBackgroundQueue(_ block:@escaping NXNoParamBlock) {
+    class func dispatchAsyncOnBackgroundQueue(_ block:@escaping NoParamBlock) {
         DispatchQueue.global(qos: .background).async(execute: block)
     }
     
-    class func dispatchAsyncOnHighPriorityQueue(_ block:@escaping NXNoParamBlock, afterDelay delay:TimeInterval) {
+    class func dispatchAsyncOnHighPriorityQueue(_ block:@escaping NoParamBlock, afterDelay delay:TimeInterval) {
         let dispatchTime = DispatchTime.now() + Double(Int64(UInt64(delay) * NSEC_PER_SEC)) / Double(NSEC_PER_SEC)
         DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: dispatchTime, execute: block)
     }
     
-    class func dispatchAsyncOnMainQueue(afterDelay delay:TimeInterval, block possibleBlock:NXNoParamBlock?) {
+    class func dispatchAsyncOnMainQueue(afterDelay delay:TimeInterval, block possibleBlock:NoParamBlock?) {
         if let block = possibleBlock {
             if delay == 0 {
                 DispatchQueue.main.async(execute: block)

@@ -30,6 +30,9 @@ extension SCNVector3: CustomStringConvertible, CustomDebugStringConvertible {
     public var debugDescription: String {
         return self.description
     }
+}
+
+public extension SCNVector3 {
     
     public func scaled(by scale:CGFloat) -> SCNVector3 {
         return self.scaled(by:Float(scale))
@@ -43,6 +46,10 @@ extension SCNVector3: CustomStringConvertible, CustomDebugStringConvertible {
     ///returns a new SCNVector3 with each value multiplied by the scale value
     public func scale(by scale:CGFloat) -> SCNVector3 {
         return self.scale(by: Float(scale))
+    }
+    
+    public func isEqual(to other:SCNVector3) -> Bool {
+        return self.x == other.x && self.y == other.y && self.z == other.z
     }
     
     ///returns a new SCNVector3 with each value multiplied by the scale value
