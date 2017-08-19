@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AspirinKit"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "A set of extensions and classes used to reduce headaches in iOS/macOS/tvOS development."
   s.homepage     = "https://github.com/webelectric/AspirinKit"
 
